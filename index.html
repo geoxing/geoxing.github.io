@@ -81,10 +81,10 @@
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Add_tags"><a href="#Add_tags" class="headerlink" title="Add tags"></a>Add tags</h1><p>In hexo , the tags’s  format is:<br><figure class="highlight haml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">tags: </span><br><span class="line">-<span class="ruby"> <span class="constant">Requirements</span>;</span><br><span class="line"></span>-<span class="ruby"> <span class="constant">Develop</span></span><br><span class="line"></span>-<span class="ruby"> <span class="constant">Design</span></span><br><span class="line"></span>-<span class="ruby"> <span class="constant">Integration</span></span><br><span class="line"></span>-<span class="ruby"> <span class="constant">Operation</span></span><br><span class="line"></span>-<span class="ruby"> <span class="constant">Analysis</span></span><br><span class="line"></span>-<span class="ruby"> <span class="constant">Cycle</span></span></span><br></pre></td></tr></table></figure></p>
+        <h1 id="Markdown_engine_sucks"><a href="#Markdown_engine_sucks" class="headerlink" title="Markdown engine sucks"></a>Markdown engine sucks</h1><p>When the post “Build static blog using github &amp; hexo on windows” was generated,I privew in the<br>brower,  it sucks,many element of markdown can’t be rightly compiled,for instance,”quote”,<br>but in the issue of github,it’s ok(finally i choosed the issue)<br>So,I try to replace the “hexo-renderer-marked” by “hexo-renderer-markdown-it”,but the same result,<br>how could it be ?  </p>
+<h1 id="Add_tags"><a href="#Add_tags" class="headerlink" title="Add tags"></a>Add tags</h1><p>In hexo , the tags’s  format is:<br><figure class="highlight haml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">tags: </span><br><span class="line">-<span class="ruby"> <span class="constant">Requirements</span>;</span><br><span class="line"></span>-<span class="ruby"> <span class="constant">Develop</span></span><br><span class="line"></span>-<span class="ruby"> <span class="constant">Design</span></span><br><span class="line"></span>-<span class="ruby"> <span class="constant">Integration</span></span><br><span class="line"></span>-<span class="ruby"> <span class="constant">Operation</span></span><br><span class="line"></span>-<span class="ruby"> <span class="constant">Analysis</span></span><br><span class="line"></span>-<span class="ruby"> <span class="constant">Cycle</span></span></span><br></pre></td></tr></table></figure></p>
 <p>the separator is not semicolon or comma    </p>
-<h1 id="Add_excerpt_link_28that_is__2C_namely_Read_More_29"><a href="#Add_excerpt_link_28that_is__2C_namely_Read_More_29" class="headerlink" title="Add excerpt_link(that is , namely Read More)"></a>Add excerpt_link(that is , namely Read More)</h1><p>In hexo excerpt_link position is up to writor by adding<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- more --&gt;</span></span><br></pre></td></tr></table></figure></p>
-<p>any where you want  </p>
+<h1 id="Add_Categories"><a href="#Add_Categories" class="headerlink" title="Add Categories"></a>Add Categories</h1><p>like “add tags”  </p>
         
           <p class="article-more-link">
             <a href="/2015/12/10/hexo-tips/#more">Read More</a>
@@ -96,7 +96,7 @@
     
       <footer class="article-footer">
         
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Tips/">Tips</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Tips/">Tips</a></li></ul>
 
       </footer>
     
@@ -232,6 +232,42 @@
 <li><a href="#install-hexo">Install Hexo</a><ul>
 <li><a href="#install-npm-optional">Install npm (optional)</a></li>
 <li><a href="#install-hexo">Install Hexo</a></li>
+<li><a href="#quick-start">Quick Start</a><ul>
+<li><a href="#setup-your-blog">Setup your blog</a></li>
+<li><a href="#start-the-server">Start the server</a></li>
+<li><a href="#create-a-new-post">Create a new post</a></li>
+<li><a href="#generate-static-files">Generate static files</a></li>
+<li><a href="#edit-post">Edit post</a></li>
+<li><a href="#deploy-onto-github">deploy onto Github</a></li>
+<li><a href="#test">Test</a></li>
+<li><a href="#make-a-summary">make a summary:</a></li>
+</ul>
+</li>
+<li><a href="#command-summary">command summary</a><ul>
+<li><a href="#general-command">general command</a></li>
+<li><a href="#composed-command">composed command</a></li>
+<li><a href="#simplify">simplify:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#sundries"><strong>sundries</strong></a><ul>
+<li><a href="#theres-gonna-be-a-space-behind-colon-in-_configymllike-this">there’s gonna be a space  behind colon in _config.yml,like this:</a></li>
+<li><a href="#installconfigureupdate-theme">install、configure、update theme</a><ul>
+<li><a href="#install">install</a></li>
+<li><a href="#configure">configure</a></li>
+<li><a href="#update">update</a></li>
+</ul>
+</li>
+<li><a href="#customize-theme">customize theme</a><ul>
+<li><a href="#comment">comment</a></li>
+<li><a href="#statistic">statistic</a></li>
+<li><a href="#analytics-google_analytics">Analytics google_analytics:</a></li>
+<li><a href="#custom-404-page">Custom 404 page</a></li>
+<li><a href="#sitemap">Sitemap</a><br>~ <a href="#add-in-the-hexo_configyml">add in the Hexo_config.yml:</a><br>~ <a href="#visit-httplocalhost4000sitemapxml-you-can-get-sitemapfile-path-sitemapxml">visit http://localhost:4000/sitemap.xml, you can get sitemap,file path \sitemap.xml</a><br>~ <a href="#show-the-sitemap">show the sitemap</a></li>
+<li><a href="#rss">RSS</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
