@@ -81,8 +81,8 @@
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <p>In the post <a href="http://geoxing.github.io/2015/12/08/How-to-develop-commercial-production/" target="_blank" rel="external">How to develop commercial production</a><br>I get a Problem&#xFF0C;like the expression shown<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">- </span>Project Architecture diagram  </span><br><span class="line">![<span class="link_label">image</span>](<span class="link_url">file:E:\geoxing.github.io\ci1.png</span>)</span><br><span class="line"><span class="bullet">- </span>develop process diagram  </span><br><span class="line">![<span class="link_label">image</span>](<span class="link_url">file:E:\geoxing.github.io\ci1p.png</span>)</span><br><span class="line"><span class="bullet">- </span>Quality Assurance  </span><br><span class="line">hand-test</span><br><span class="line"><span class="header">#### multi-projects, one build for mid business  </span></span><br><span class="line">Module num &gt; 20  </span><br><span class="line">develop num &gt; 100  </span><br><span class="line"><span class="bullet">- </span>Project Architecture diagram  </span><br><span class="line">![<span class="link_label">image</span>](<span class="link_url">file:E:\geoxing.github.io\ci2.png</span>)</span><br><span class="line"><span class="bullet">- </span>develop process diagram:</span><br><span class="line">commit role: from dev to bundle</span><br><span class="line">commit way: from committing code  to repositories</span><br><span class="line">![<span class="link_label">image</span>](<span class="link_url">file:E:\geoxing.github.io\ci2p.png</span>)</span><br><span class="line">![<span class="link_label">image</span>](<span class="link_url">file:E:\geoxing.github.io\ci2d.png</span>)</span><br><span class="line"><span class="bullet">- </span>Quality Assurance  </span><br><span class="line">make code review platform  </span><br><span class="line">make bundle platform  </span><br><span class="line">make buider platform  </span><br><span class="line">make test platform  </span><br><span class="line">make insepection platform  </span><br><span class="line">make gray release process  </span><br><span class="line">![<span class="link_label">image</span>](<span class="link_url">file:E:\geoxing.github.io\ci2q.png</span>)</span><br><span class="line"><span class="header">#### multi-projects, multi-build, pluginization for large business</span></span><br><span class="line">every Module is individual on the develp,code review,integration,test</span><br><span class="line"><span class="bullet">- </span>Project Architecture diagram  </span><br><span class="line">![<span class="link_label">image</span>](<span class="link_url">file:E:\geoxing.github.io\ci3.png</span>)</span><br><span class="line"><span class="bullet">- </span>develop process diagram:</span><br><span class="line">![<span class="link_label">image</span>](<span class="link_url">file:E:\geoxing.github.io\ci3p.png</span>)</span><br><span class="line">bundle dev phase  </span><br><span class="line">integration phase  </span><br><span class="line">release phase  </span><br><span class="line"><span class="bullet">- </span>Quality Assurance: CI,CD    </span><br><span class="line">![<span class="link_label">image</span>](<span class="link_url">file:E:\geoxing.github.io\ci3q.png</span>)</span><br></pre></td></tr></table></figure></p>
-<p>and,after it is be  generated, deployed, and tested , all the images gone.<br>finally, I figure out the imagebed must be used, and github may be available<br>so, the steps is:</p>
+        <p>In the post <a href="http://geoxing.github.io/2015/12/08/How-to-develop-commercial-production/" target="_blank" rel="external">How to develop commercial production</a><br>I get a problem&#xFF0C;like the expression shown:<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">- </span>Project Architecture diagram  </span><br><span class="line">![<span class="link_label">image</span>](<span class="link_url">file:E:\geoxing.github.io\ci1.png</span>)</span><br><span class="line"><span class="bullet">- </span>develop process diagram  </span><br><span class="line">![<span class="link_label">image</span>](<span class="link_url">file:E:\geoxing.github.io\ci1p.png</span>)</span><br><span class="line"><span class="bullet">- </span>Quality Assurance  </span><br><span class="line">hand-test</span><br><span class="line"><span class="header">#### multi-projects, one build for mid business  </span></span><br><span class="line">Module num &gt; 20  </span><br><span class="line">develop num &gt; 100  </span><br><span class="line"><span class="bullet">- </span>Project Architecture diagram  </span><br><span class="line">![<span class="link_label">image</span>](<span class="link_url">file:E:\geoxing.github.io\ci2.png</span>)</span><br><span class="line"><span class="bullet">- </span>develop process diagram:</span><br><span class="line">commit role: from dev to bundle</span><br><span class="line">commit way: from committing code  to repositories</span><br><span class="line">![<span class="link_label">image</span>](<span class="link_url">file:E:\geoxing.github.io\ci2p.png</span>)</span><br><span class="line">![<span class="link_label">image</span>](<span class="link_url">file:E:\geoxing.github.io\ci2d.png</span>)</span><br><span class="line"><span class="bullet">- </span>Quality Assurance  </span><br><span class="line">make code review platform  </span><br><span class="line">make bundle platform  </span><br><span class="line">make buider platform  </span><br><span class="line">make test platform  </span><br><span class="line">make insepection platform  </span><br><span class="line">make gray release process  </span><br><span class="line">![<span class="link_label">image</span>](<span class="link_url">file:E:\geoxing.github.io\ci2q.png</span>)</span><br><span class="line"><span class="header">#### multi-projects, multi-build, pluginization for large business</span></span><br><span class="line">every Module is individual on the develp,code review,integration,test</span><br><span class="line"><span class="bullet">- </span>Project Architecture diagram  </span><br><span class="line">![<span class="link_label">image</span>](<span class="link_url">file:E:\geoxing.github.io\ci3.png</span>)</span><br><span class="line"><span class="bullet">- </span>develop process diagram:</span><br><span class="line">![<span class="link_label">image</span>](<span class="link_url">file:E:\geoxing.github.io\ci3p.png</span>)</span><br><span class="line">bundle dev phase  </span><br><span class="line">integration phase  </span><br><span class="line">release phase  </span><br><span class="line"><span class="bullet">- </span>Quality Assurance: CI,CD    </span><br><span class="line">![<span class="link_label">image</span>](<span class="link_url">file:E:\geoxing.github.io\ci3q.png</span>)</span><br></pre></td></tr></table></figure></p>
+<p>and,after it is be  generated, deployed, and tested , all the images gone.<br>finally, I figure out the imagebed must be used, and github may be available<br>so, the steps is:  </p>
 <ol>
 <li>create a repositories named photos on github</li>
 <li>make dir named photos</li>
@@ -331,7 +331,55 @@
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="indicators"><a href="#Indicators" class="headerlink" title="Indicators"></a>Indicators</h1><h2 id="tech-indicators"><a href="#Tech_indicators" class="headerlink" title="Tech indicators"></a>Tech indicators</h2><h3 id="security"><a href="#Security" class="headerlink" title="Security"></a>Security</h3><h3 id="stability"><a href="#Stability" class="headerlink" title="Stability"></a>Stability</h3><h3 id="performance"><a href="#Performance" class="headerlink" title="Performance"></a>Performance</h3><h2 id="operation-indicators"><a href="#Operation_indicators" class="headerlink" title="Operation indicators"></a>Operation indicators</h2><h3 id="trading-volume"><a href="#Trading_volume" class="headerlink" title="Trading volume"></a>Trading volume</h3><h3 id="cvr-click-value-rate"><a href="#CVR__28Click_Value_Rate_29" class="headerlink" title="CVR (Click Value Rate)"></a>CVR (Click Value Rate)</h3><h3 id="user-account"><a href="#User_account" class="headerlink" title="User account"></a>User account</h3><h3 id="pvuv"><a href="#PV/UV" class="headerlink" title="PV/UV"></a>PV/UV</h3><h3 id="bounce-rate"><a href="#Bounce_Rate" class="headerlink" title="Bounce Rate"></a>Bounce Rate</h3><h1 id="development-cycle"><a href="#Development_Cycle" class="headerlink" title="Development Cycle"></a>Development Cycle</h1><h2 id="requirements"><a href="#Requirements" class="headerlink" title="Requirements"></a>Requirements</h2><h3 id="backlog"><a href="#BackLog" class="headerlink" title="BackLog"></a>BackLog</h3><h3 id="user-story"><a href="#User_Story" class="headerlink" title="User Story"></a>User Story</h3><h3 id="uispec"><a href="#UISpec" class="headerlink" title="UISpec"></a>UISpec</h3><h2 id="design"><a href="#Design" class="headerlink" title="Design"></a>Design</h2><h3 id="design-drawing"><a href="#Design_drawing" class="headerlink" title="Design drawing"></a>Design drawing</h3><h3 id="html-css"><a href="#html__26amp_3B_CSS" class="headerlink" title="html &amp; CSS"></a>html &amp; CSS</h3><h2 id="develop"><a href="#Develop" class="headerlink" title="Develop"></a>Develop</h2><h3 id="version-manage-tools-git"><a href="#Version_Manage_Tools_3A_git" class="headerlink" title="Version Manage Tools: git"></a>Version Manage Tools: git</h3><h3 id="branchs-manage-master-develop"><a href="#Branchs_Manage_3A_master_develop" class="headerlink" title="Branchs Manage: master  develop"></a>Branchs Manage: master  develop</h3><h3 id="develop-process-scrum"><a href="#Develop_Process_3A_Scrum" class="headerlink" title="Develop Process: Scrum"></a>Develop Process: Scrum</h3><h3 id="engineering-ci-continuous-interaction-cdcontinuous-delivery-platformization-framization"><a href="#Engineering_3A_CI__28Continuous_interaction_29_/_CD_28Continuous_delivery_29_/_platformization_/_Framization" class="headerlink" title="Engineering: CI (Continuous interaction) / CD(Continuous delivery) / platformization / Framization"></a>Engineering: CI (Continuous interaction) / CD(Continuous delivery) / platformization / Framization</h3><h3 id="timer-2-weeks"><a href="#Timer_3A_2_weeks" class="headerlink" title="Timer: 2 weeks"></a>Timer: 2 weeks</h3><h3 id="frontend"><a href="#FrontEnd" class="headerlink" title="FrontEnd"></a>FrontEnd</h3><h3 id="backend-focus"><a href="#BackEnd_focus" class="headerlink" title="BackEnd focus"></a>BackEnd focus</h3><h4 id="high-scalability-timeout"><a href="#High_Scalability_3A_timeout" class="headerlink" title="High Scalability: timeout"></a>High Scalability: timeout</h4><h4 id="performance-cacheparallelization"><a href="#Performance_3A_cache/parallelization" class="headerlink" title="Performance: cache/parallelization"></a>Performance: cache/parallelization</h4><h4 id="security"><a href="#Security-1" class="headerlink" title="Security"></a>Security</h4><h2 id="integration"><a href="#Integration" class="headerlink" title="Integration"></a>Integration</h2><h3 id="process"><a href="#process" class="headerlink" title="process"></a>process</h3><h4 id="one-project-one-build-for-small-business"><a href="#one_project_2C_one_build_for_small_business" class="headerlink" title="one project, one build  for small business"></a>one project, one build  for small business</h4><ul>
+        <p><strong><em>TO be continue</em></strong></p>
+<h1 id="indicators"><a href="#Indicators" class="headerlink" title="Indicators"></a>Indicators</h1><h2 id="tech-indicators"><a href="#Tech_indicators" class="headerlink" title="Tech indicators"></a>Tech indicators</h2><h3 id="security"><a href="#Security" class="headerlink" title="Security"></a>Security</h3><h3 id="stability"><a href="#Stability" class="headerlink" title="Stability"></a>Stability</h3><h3 id="availability"><a href="#Availability" class="headerlink" title="Availability"></a>Availability</h3><ol>
+<li>MTBF (Mean Time Between Failure)</li>
+<li>MTTR (mean time to restoration)</li>
+<li>Availability = (MTBF/(MTBF+MTTR))*100%</li>
+</ol>
+<h3 id="performance"><a href="#Performance" class="headerlink" title="Performance"></a>Performance</h3><h2 id="operation-indicators"><a href="#Operation_indicators" class="headerlink" title="Operation indicators"></a>Operation indicators</h2><h3 id="trading-volume"><a href="#Trading_volume" class="headerlink" title="Trading volume"></a>Trading volume</h3><h3 id="cvr-click-value-rate"><a href="#CVR__28Click_Value_Rate_29" class="headerlink" title="CVR (Click Value Rate)"></a>CVR (Click Value Rate)</h3><h3 id="user-account"><a href="#User_account" class="headerlink" title="User account"></a>User account</h3><h3 id="pvuv"><a href="#PV/UV" class="headerlink" title="PV/UV"></a>PV/UV</h3><h3 id="bounce-rate"><a href="#Bounce_Rate" class="headerlink" title="Bounce Rate"></a>Bounce Rate</h3><h1 id="development-cycle"><a href="#Development_Cycle" class="headerlink" title="Development Cycle"></a>Development Cycle</h1><h2 id="requirements"><a href="#Requirements" class="headerlink" title="Requirements"></a>Requirements</h2><h3 id="backlog"><a href="#BackLog" class="headerlink" title="BackLog"></a>BackLog</h3><h3 id="user-story"><a href="#User_Story" class="headerlink" title="User Story"></a>User Story</h3><h3 id="uispec"><a href="#UISpec" class="headerlink" title="UISpec"></a>UISpec</h3><h2 id="design"><a href="#Design" class="headerlink" title="Design"></a>Design</h2><h3 id="design-drawing"><a href="#Design_drawing" class="headerlink" title="Design drawing"></a>Design drawing</h3><h3 id="html-css"><a href="#html__26amp_3B_CSS" class="headerlink" title="html &amp; CSS"></a>html &amp; CSS</h3><h2 id="develop"><a href="#Develop" class="headerlink" title="Develop"></a>Develop</h2><h3 id="develop-environment"><a href="#develop_Environment_3A" class="headerlink" title="develop Environment:"></a>develop Environment:</h3><ol>
+<li><a href="https://github.com/boxen/" target="_blank" rel="external">github Boxen</a>  for ios</li>
+<li><a href="https://www.vagrantup.com/" target="_blank" rel="external">vagrantup</a></li>
+</ol>
+<h3 id="version-manage-tools-git"><a href="#Version_Manage_Tools_3A_git" class="headerlink" title="Version Manage Tools: git"></a>Version Manage Tools: git</h3><h3 id="package-manager"><a href="#Package_Manager_3A" class="headerlink" title="Package Manager:"></a>Package Manager:</h3><h4 id="os-level"><a href="#OS_level" class="headerlink" title="OS level"></a>OS level</h4><ol>
+<li>BSD/Macos: homebrew(made of ruby&amp; git)</li>
+<li>Linux  <ul>
+<li>from source: configure/make/make install</li>
+<li>using rpm/dpkg(hard mode): ==&gt; centos/debian(ubuntu)</li>
+<li>using yum/apt(easy mode): ==&gt; centos/debian(ubuntu)</li>
+</ul>
+</li>
+</ol>
+<h4 id="language-level"><a href="#Language_level" class="headerlink" title="Language level"></a>Language level</h4><ol>
+<li>.net: nuget</li>
+<li>java: maven</li>
+<li>sacla: sbt</li>
+<li>ruby: gem</li>
+<li>jsp: npm</li>
+<li>swift: spm</li>
+<li>python:<ul>
+<li>easy install (setuptools), can&#x2019;t support uninstall</li>
+<li>pip (good)</li>
+</ul>
+</li>
+<li>go: get</li>
+</ol>
+<h3 id="branchs-manage-master-develop"><a href="#Branchs_Manage_3A_master_develop" class="headerlink" title="Branchs Manage: master  develop"></a>Branchs Manage: master  develop</h3><h3 id="develop-process-scrum"><a href="#Develop_Process_3A_Scrum" class="headerlink" title="Develop Process: Scrum"></a>Develop Process: Scrum</h3><h3 id="engineering-ci-continuous-interaction-cdcontinuous-delivery-platformization-framization"><a href="#Engineering_3A_CI__28Continuous_interaction_29_/_CD_28Continuous_delivery_29_/_platformization_/_Framization" class="headerlink" title="Engineering: CI (Continuous interaction) / CD(Continuous delivery) / platformization / Framization"></a>Engineering: CI (Continuous interaction) / CD(Continuous delivery) / platformization / Framization</h3><h3 id="timer-2-weeks"><a href="#Timer_3A_2_weeks" class="headerlink" title="Timer: 2 weeks"></a>Timer: 2 weeks</h3><h3 id="frontend"><a href="#FrontEnd" class="headerlink" title="FrontEnd"></a>FrontEnd</h3><h3 id="backend-focus"><a href="#BackEnd_focus" class="headerlink" title="BackEnd focus"></a>BackEnd focus</h3><h4 id="high-scalability-timeout"><a href="#High_Scalability_3A_timeout" class="headerlink" title="High Scalability: timeout"></a>High Scalability: timeout</h4><h4 id="performance-cacheparallelization"><a href="#Performance_3A_cache/parallelization" class="headerlink" title="Performance: cache/parallelization"></a>Performance: cache/parallelization</h4><p>Stress Testing tool:</p>
+<ul>
+<li>TSung: TCPCopy</li>
+<li>A/B test</li>
+</ul>
+<h4 id="debug"><a href="#debug" class="headerlink" title="debug"></a>debug</h4><ol>
+<li>keep context: no reboot, gcore/jmap/tcpdump</li>
+<li>restore context: tcpcopy,touchstone</li>
+<li>snap analysis: gdb&#x3001;Xmap&#x3001;mat&#x3001;jstack</li>
+<li>call analysis: btrace&#x3001;Xtrace</li>
+<li>composed ansysis: perf&#x3001;Xstat&#x3001;Xtop&#x3001;sysdig</li>
+</ol>
+<h4 id="security"><a href="#Security-1" class="headerlink" title="Security"></a>Security</h4><h2 id="integration"><a href="#Integration" class="headerlink" title="Integration"></a>Integration</h2><h3 id="tools"><a href="#tools" class="headerlink" title="tools"></a>tools</h3><ol>
+<li>jenkins </li>
+</ol>
+<h3 id="process"><a href="#process" class="headerlink" title="process"></a>process</h3><h4 id="one-project-one-build-for-small-business"><a href="#one_project_2C_one_build_for_small_business" class="headerlink" title="one project, one build  for small business"></a>one project, one build  for small business</h4><ul>
 <li>Project Architecture diagram<br><img src="https://raw.githubusercontent.com/geoxing/photos/master/ci1.png" alt="image"></li>
 <li>develop process diagram<br><img src="https://raw.githubusercontent.com/geoxing/photos/master/ci1p.png" alt="image"></li>
 <li>Quality Assurance<br>hand-test<h4 id="multi-projects-one-build-for-mid-business"><a href="#multi-projects_2C_one_build_for_mid_business" class="headerlink" title="multi-projects, one build for mid business"></a>multi-projects, one build for mid business</h4>Module num &gt; 20<br>develop num &gt; 100  </li>
@@ -342,19 +390,94 @@
 <li>develop process diagram:<br><img src="https://raw.githubusercontent.com/geoxing/photos/master/ci3p.png" alt="image"><br>bundle dev phase<br>integration phase<br>release phase  </li>
 <li>Quality Assurance: CI,CD<br><img src="https://raw.githubusercontent.com/geoxing/photos/master/ci3q.png" alt="image"></li>
 </ul>
-<h3 id="static-resource-optimization"><a href="#Static_resource_optimization" class="headerlink" title="Static resource optimization"></a>Static resource optimization</h3><h3 id="static-code-review"><a href="#Static_code_review" class="headerlink" title="Static code  review"></a>Static code  review</h3><h3 id="develop-output-check"><a href="#Develop_output_check" class="headerlink" title="&lt;strong&gt;Develop output check&lt;/strong&gt;"></a><strong>Develop output check</strong></h3><h3 id="version-and-config-file"><a href="#Version_and_config_file" class="headerlink" title="Version and config file"></a>Version and config file</h3><h3 id="cdn"><a href="#CDN" class="headerlink" title="CDN"></a>CDN</h3><h3 id="releases-for-various-platform"><a href="#Releases_for_various_platform" class="headerlink" title="Releases for various platform"></a>Releases for various platform</h3><h2 id="operation"><a href="#Operation" class="headerlink" title="Operation"></a>Operation</h2><h3 id="avoid-single-point-of-failure"><a href="#Avoid_single_point_of_failure" class="headerlink" title="Avoid single point of failure"></a>Avoid single point of failure</h3><h3 id="monitor-and-warning"><a href="#Monitor_and_Warning" class="headerlink" title="Monitor and Warning"></a>Monitor and Warning</h3><h4 id="log-from-frontend-to-backend"><a href="#Log_from_frontend_to_backend" class="headerlink" title="Log from frontend to backend"></a>Log from frontend to backend</h4><h5 id="exception-log"><a href="#exception_log" class="headerlink" title="exception log"></a>exception log</h5><h5 id="performance-log"><a href="#performance_log" class="headerlink" title="performance log"></a>performance log</h5><h5 id="visit-log"><a href="#Visit_log" class="headerlink" title="Visit log"></a>Visit log</h5><h5 id="influence-log"><a href="#Influence_log" class="headerlink" title="Influence log"></a>Influence log</h5><h5 id="trace-log"><a href="#trace_log" class="headerlink" title="trace log"></a>trace log</h5><h4 id="profiling-everything"><a href="#Profiling_everything" class="headerlink" title="Profiling everything"></a>Profiling everything</h4><ol>
-<li>for backend </li>
+<h4 id="eg"><a href="#e-g" class="headerlink" title="e.g"></a>e.g</h4><ul>
+<li>web develop process (from zhihu)<ol>
+<li>Erect task on phabricator</li>
+<li>commit diff and relating to task</li>
+<li>unit test</li>
+<li>code reviewer</li>
+<li>merge code</li>
+<li>online test  </li>
+<li>close task  </li>
 </ol>
+</li>
+<li>android <ol>
+<li>Genymotion (android emulator)</li>
+</ol>
+</li>
+<li>mobile quality assurance (from meituan)<br><img src="https://raw.githubusercontent.com/geoxing/photos/master/meituanQA1.PNG" alt="image"><br><img src="https://raw.githubusercontent.com/geoxing/photos/master/meituanQA2special.PNG" alt="image">  </li>
+</ul>
+<h3 id="static-resource-optimization"><a href="#Static_resource_optimization" class="headerlink" title="Static resource optimization"></a>Static resource optimization</h3><h3 id="static-code-review"><a href="#Static_code_review" class="headerlink" title="Static code  review"></a>Static code  review</h3><ol>
+<li>regulation: google&#x2019;s C++ coding style guide for all dev languages</li>
+<li><a href="http://phabricator.org/" target="_blank" rel="external">phabricator</a> from facebook  (good)</li>
+<li>gerrit</li>
+</ol>
+<h3 id="develop-output-check"><a href="#Develop_output_check" class="headerlink" title="&lt;strong&gt;Develop output check&lt;/strong&gt;"></a><strong>Develop output check</strong></h3><h3 id="build-tools"><a href="#Build_tools" class="headerlink" title="Build tools"></a>Build tools</h3><ol>
+<li><a href="https://github.com/buildout/buildout" target="_blank" rel="external">buildout</a> for python</li>
+<li>gradle for android build </li>
+<li>maven </li>
+</ol>
+<h3 id="version-and-config-file"><a href="#Version_and_config_file" class="headerlink" title="Version and config file"></a>Version and config file</h3><h3 id="deploy-tools"><a href="#deploy_tools" class="headerlink" title="deploy tools"></a>deploy tools</h3><ol>
+<li>fabric<ul>
+<li>made of python</li>
+<li>&lt;10 servers</li>
+<li>servers status are same</li>
+</ul>
+</li>
+<li>chef/puppet<ul>
+<li>made of ruby</li>
+<li>slow</li>
+</ul>
+</li>
+<li>salt/ansible (good) </li>
+<li>Docker (best,final)</li>
+</ol>
+<h3 id="route-bgpborder-gateway-protocol-one-ip-support-accessing-from-various-operators"><a href="#route_3A_BGP_28_28Border_Gateway_Protocol_29_2C_one_IP_2C_support_accessing_from_Various_Operators" class="headerlink" title="route: BGP((Border Gateway Protocol), one IP, support accessing from Various Operators"></a>route: BGP((Border Gateway Protocol), one IP, support accessing from Various Operators</h3><h3 id="cdn"><a href="#CDN_3A" class="headerlink" title="CDN:"></a>CDN:</h3><h3 id="vpsvirtual-privates-srever"><a href="#VPS_28Virtual_Privates_Srever_29" class="headerlink" title="VPS(Virtual Privates Srever)"></a>VPS(Virtual Privates Srever)</h3><ul>
+<li>ailiyun</li>
+<li>qingcloud</li>
+<li>digitial ocean</li>
+<li>linode</li>
+<li>aws</li>
+</ul>
+<h3 id="releases-for-various-platform"><a href="#Releases_for_various_platform" class="headerlink" title="Releases for various platform"></a>Releases for various platform</h3><h2 id="operation"><a href="#Operation" class="headerlink" title="Operation"></a>Operation</h2><h3 id="improve-abailability"><a href="#improve_abailability" class="headerlink" title="improve abailability"></a>improve abailability</h3><ol>
+<li>Avoid single point of failure:network/Device/code problem</li>
+<li>Narrow time of failure (imporant)<ul>
+<li>automate</li>
+<li>one click </li>
+</ul>
+</li>
+<li>Cure:<ul>
+<li>for stateless instance<br><img src="https://raw.githubusercontent.com/geoxing/photos/master/solvestateless.PNG" alt="image"></li>
+<li>for state instance<br>HA:master-salve<br>Paxos/raft<br><img src="https://raw.githubusercontent.com/geoxing/photos/master/solvestate.PNG" alt="image"></li>
+<li>for cluster<br>downgrade<br>limit crowding<br>automatic scaling<br>fast fallback</li>
+<li>for data center: multi-IDC</li>
+<li>for local city<br><img src="https://raw.githubusercontent.com/geoxing/photos/master/solvelocalcity.PNG" alt="image"> </li>
+<li>for domestic  city<br><img src="https://raw.githubusercontent.com/geoxing/photos/master/solvelocalcity.PNG" alt="image"> </li>
+<li>for global</li>
+</ul>
+</li>
+</ol>
+<h3 id="monitor-and-warning"><a href="#Monitor_and_Warning" class="headerlink" title="Monitor and Warning"></a>Monitor and Warning</h3><ol>
+<li>zabbix+graphite(zhihu)</li>
+<li>xiaomi open-falcon</li>
+<li>supervisor</li>
+</ol>
+<h4 id="log-from-frontend-to-backend"><a href="#Log_from_frontend_to_backend" class="headerlink" title="Log from frontend to backend"></a>Log from frontend to backend</h4><h5 id="exception-log"><a href="#exception_log" class="headerlink" title="exception log"></a>exception log</h5><h5 id="performance-log"><a href="#performance_log" class="headerlink" title="performance log"></a>performance log</h5><h5 id="visit-log"><a href="#Visit_log" class="headerlink" title="Visit log"></a>Visit log</h5><h5 id="influence-log"><a href="#Influence_log" class="headerlink" title="Influence log"></a>Influence log</h5><h5 id="trace-log"><a href="#trace_log" class="headerlink" title="trace log"></a>trace log</h5><h5 id="eg"><a href="#e-g-1" class="headerlink" title="e.g"></a>e.g</h5><ol>
+<li><a href="https://github.com/zhihu/kids" target="_blank" rel="external">zhihu&#x2019;s log</a></li>
+</ol>
+<h4 id="profiling-everything"><a href="#Profiling_everything" class="headerlink" title="Profiling everything"></a>Profiling everything</h4><ol>
+<li><p>for backend </p>
 <ul>
 <li>gperftools</li>
 <li>perf</li>
 <li>gprof<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">gcc -pg <span class="tag">a</span><span class="class">.c</span> -o <span class="tag">a</span></span><br><span class="line">./<span class="tag">a</span></span><br><span class="line">gprof ./a</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<ol>
-<li>for frontend<h4 id="user-actions"><a href="#User_Actions" class="headerlink" title="User Actions"></a>User Actions</h4><h2 id="data-analysis"><a href="#Data_Analysis" class="headerlink" title="Data Analysis"></a>Data Analysis</h2><h3 id="data-sample"><a href="#Data_Sample" class="headerlink" title="Data Sample"></a>Data Sample</h3><h3 id="pvuvbouncerate"><a href="#PV/UV/BounceRate" class="headerlink" title="PV/UV/BounceRate.."></a>PV/UV/BounceRate..</h3><h3 id="ab-test"><a href="#A/B_Test" class="headerlink" title="A/B Test"></a>A/B Test</h3><h2 id="recurrence"><a href="#Recurrence" class="headerlink" title="Recurrence"></a>Recurrence</h2></li>
+</li>
+<li><p>for frontend</p>
+</li>
 </ol>
-
+<h4 id="user-actions"><a href="#User_Actions" class="headerlink" title="User Actions"></a>User Actions</h4><h2 id="data-analysis"><a href="#Data_Analysis" class="headerlink" title="Data Analysis"></a>Data Analysis</h2><h3 id="data-sample"><a href="#Data_Sample" class="headerlink" title="Data Sample"></a>Data Sample</h3><h3 id="pvuvbouncerate"><a href="#PV/UV/BounceRate" class="headerlink" title="PV/UV/BounceRate.."></a>PV/UV/BounceRate..</h3><h3 id="ab-test"><a href="#A/B_Test" class="headerlink" title="A/B Test"></a>A/B Test</h3><h2 id="recurrence"><a href="#Recurrence" class="headerlink" title="Recurrence"></a>Recurrence</h2>
       
     </div>
     
