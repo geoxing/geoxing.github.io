@@ -54,6 +54,70 @@
   </div>
 </header>
     <section id="main" class="outer">
+      <article id="post-how-to-store-hexo-source-and-theme-on-github" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/12/22/how-to-store-hexo-source-and-theme-on-github/">How to Store Hexo Source and Theme on Github</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      <a href="/2015/12/22/how-to-store-hexo-source-and-theme-on-github/" class="article-date">
+  <time datetime="2015-12-22T05:52:16.000Z" itemprop="datePublished">2015-12-22</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Job/">Job</a>
+  </div>
+
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>When you have the ability to use hexo, you may be wonder what should we do if my device lost or<br>broken, how to store and transfer my source of hexo, now you need follow below these steps:</p>
+<ol>
+<li><p>init git and create branch from your blog repository  </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> Hexo </span><br><span class="line">git init</span><br><span class="line">git branch <span class="built_in">source</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>edit .gitignore and add hexo source  </p>
+<figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git  status</span><br><span class="line">git  <span class="keyword">add</span> * <span class="keyword">or</span> git <span class="keyword">add</span> .</span><br><span class="line">git  <span class="keyword">add</span> .gitignore</span><br><span class="line">git  commit -m <span class="string">&quot;add source&quot;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>add themes/minos<br>if you wants to add themes/minos source,it failed, you will see:  </p>
+<figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fatal: Pathspec <span class="string">&apos;xxxx&apos;</span> <span class="keyword">is</span> <span class="keyword">in</span> submodule <span class="string">&apos;themes/minos&apos;</span></span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>because .git dir exist in themes/minos, you should do this:<br><figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git rm --cached themes<span class="regexp">/minos/</span></span><br><span class="line">git add themes<span class="regexp">/minos/</span></span><br></pre></td></tr></table></figure></p>
+<ol>
+<li><p>push branch  </p>
+<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git branch -<span class="keyword">a</span></span><br><span class="line">git remote <span class="built_in">add</span> origin http<span class="variable">s:</span>//github.<span class="keyword">com</span>/geoxing/geoxing.github.io.git</span><br><span class="line">git push --<span class="keyword">set</span>-upstream origin <span class="keyword">source</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>over, and enjoy</p>
+</li>
+</ol>
+
+      
+    </div>
+    
+    
+      <footer class="article-footer">
+        
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Github/">Github</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Tips/">Tips</a></li></ul>
+
+      </footer>
+    
+  </div>
+  
+</article>
+
+
+    
       <article id="post-add-images-using-github-as-imagebed-in-markdown" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -332,6 +396,89 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p><strong><em>TO be continue</em></strong></p>
+<!-- toc -->
+<ul>
+<li><a href="#indicators">Indicators</a><ul>
+<li><a href="#tech-indicators">Tech indicators</a><ul>
+<li><a href="#security">Security</a></li>
+<li><a href="#stability">Stability</a></li>
+<li><a href="#availability">Availability</a></li>
+<li><a href="#performance">Performance</a></li>
+</ul>
+</li>
+<li><a href="#operation-indicators">Operation indicators</a><ul>
+<li><a href="#trading-volume">Trading volume</a></li>
+<li><a href="#cvr-click-value-rate">CVR (Click Value Rate)</a></li>
+<li><a href="#user-account">User account</a></li>
+<li><a href="#pvuv">PV/UV</a></li>
+<li><a href="#bounce-rate">Bounce Rate</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#development-cycle">Development Cycle</a><ul>
+<li><a href="#requirements">Requirements</a><ul>
+<li><a href="#backlog">BackLog</a></li>
+<li><a href="#user-story">User Story</a></li>
+<li><a href="#uispec">UISpec</a></li>
+</ul>
+</li>
+<li><a href="#design">Design</a><ul>
+<li><a href="#design-drawing">Design drawing</a></li>
+<li><a href="#html-css">html &amp; CSS</a></li>
+</ul>
+</li>
+<li><a href="#develop">Develop</a><ul>
+<li><a href="#develop-environment">develop Environment:</a></li>
+<li><a href="#version-manage-tools-git">Version Manage Tools: git</a></li>
+<li><a href="#package-manager">Package Manager:</a><br>~ <a href="#os-level">OS level</a><br>~ <a href="#language-level">Language level</a></li>
+<li><a href="#branchs-manage-master-develop">Branchs Manage: master  develop</a></li>
+<li><a href="#develop-process-scrum">Develop Process: Scrum</a></li>
+<li><a href="#engineering-ci-continuous-interaction-cdcontinuous-delivery-platformization-framization">Engineering: CI (Continuous interaction) / CD(Continuous delivery) / platformization / Framization</a></li>
+<li><a href="#timer-2-weeks">Timer: 2 weeks</a></li>
+<li><a href="#frontend">FrontEnd</a></li>
+<li><a href="#backend-focus">BackEnd focus</a><br>~ <a href="#high-scalability-timeout">High Scalability: timeout</a><br>~ <a href="#performance-cacheparallelization">Performance: cache/parallelization</a><br>~ <a href="#debug">debug</a><br>~ <a href="#security">Security</a></li>
+</ul>
+</li>
+<li><a href="#integration">Integration</a><ul>
+<li><a href="#tools">tools</a></li>
+<li><a href="#process">process</a><br>~ <a href="#one-project-one-build-for-small-business">one project, one build  for small business</a><br>~ <a href="#multi-projects-one-build-for-mid-business">multi-projects, one build for mid business</a><br>~ <a href="#multi-projects-multi-build-pluginization-for-large-business">multi-projects, multi-build, pluginization for large business</a><br>~ <a href="#eg">e.g</a></li>
+<li><a href="#static-resource-optimization">Static resource optimization</a></li>
+<li><a href="#static-code-review">Static code  review</a></li>
+<li><a href="#develop-output-check"><strong>Develop output check</strong></a></li>
+<li><a href="#build-tools">Build tools</a></li>
+<li><a href="#version-and-config-file">Version and config file</a></li>
+<li><a href="#deploy-tools">deploy tools</a></li>
+<li><a href="#route-bgpborder-gateway-protocol-one-ip-support-accessing-from-various-operators">route: BGP((Border Gateway Protocol), one IP, support accessing from Various Operators</a></li>
+<li><a href="#cdn">CDN:</a></li>
+<li><a href="#vpsvirtual-privates-srever">VPS(Virtual Privates Srever)</a></li>
+<li><a href="#releases-for-various-platform">Releases for various platform</a></li>
+</ul>
+</li>
+<li><a href="#operation">Operation</a><ul>
+<li><a href="#improve-abailability">improve abailability</a></li>
+<li><a href="#monitor-and-warning">Monitor and Warning</a><br>~ <a href="#log-from-frontend-to-backend">Log from frontend to backend</a><ul>
+<li><a href="#exception-log">exception log</a></li>
+<li><a href="#performance-log">performance log</a></li>
+<li><a href="#visit-log">Visit log</a></li>
+<li><a href="#influence-log">Influence log</a></li>
+<li><a href="#trace-log">trace log</a></li>
+<li><a href="#eg">e.g</a><br>~ <a href="#profiling-everything">Profiling everything</a><br>~ <a href="#user-actions">User Actions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#data-analysis">Data Analysis</a><ul>
+<li><a href="#data-sample">Data Sample</a></li>
+<li><a href="#pvuvbouncerate">PV/UV/BounceRate..</a></li>
+<li><a href="#ab-test">A/B Test</a></li>
+</ul>
+</li>
+<li><a href="#recurrence">Recurrence</a></li>
+</ul>
+</li>
+</ul>
+<!-- tocstop -->
 <h1 id="indicators"><a href="#Indicators" class="headerlink" title="Indicators"></a>Indicators</h1><h2 id="tech-indicators"><a href="#Tech_indicators" class="headerlink" title="Tech indicators"></a>Tech indicators</h2><h3 id="security"><a href="#Security" class="headerlink" title="Security"></a>Security</h3><h3 id="stability"><a href="#Stability" class="headerlink" title="Stability"></a>Stability</h3><h3 id="availability"><a href="#Availability" class="headerlink" title="Availability"></a>Availability</h3><ol>
 <li>MTBF (Mean Time Between Failure)</li>
 <li>MTTR (mean time to restoration)</li>
@@ -450,7 +597,7 @@
 <li>for stateless instance<br><img src="https://raw.githubusercontent.com/geoxing/photos/master/solvestateless.PNG" alt="image"></li>
 <li>for state instance<br>HA:master-salve<br>Paxos/raft<br><img src="https://raw.githubusercontent.com/geoxing/photos/master/solvestate.PNG" alt="image"></li>
 <li>for cluster<br>downgrade<br>limit crowding<br>automatic scaling<br>fast fallback</li>
-<li>for data center: multi-IDC</li>
+<li>for data center: multi-IDC  </li>
 <li>for local city<br><img src="https://raw.githubusercontent.com/geoxing/photos/master/solvelocalcity.PNG" alt="image"> </li>
 <li>for domestic  city<br><img src="https://raw.githubusercontent.com/geoxing/photos/master/solvelocalcity.PNG" alt="image"> </li>
 <li>for global</li>

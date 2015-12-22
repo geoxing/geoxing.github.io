@@ -6,23 +6,53 @@
   <title>How to Develop Commercial Production - Debug</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="TO be continue
-IndicatorsTech indicatorsSecurityStabilityAvailability
-MTBF (Mean Time Between Failure)
-MTTR (mean time to restoration)
-Availability = (MTBF/(MTBF+MTTR))*100%
+&amp;lt;!-- toc --&amp;gt;
 
-PerformanceOperation indi">
+Indicators
+Tech indicators
+Security
+Stability
+Availability
+Performance
+
+
+Operation indicators
+Trading volume
+CVR (Click Value Rate)
+User account
+PV/UV
+Bounce Rate
+
+
+
+
+Deve">
 <meta property="og:type" content="article">
 <meta property="og:title" content="How to Develop Commercial Production">
 <meta property="og:url" content="http://yoursite.com/2015/12/08/How-to-develop-commercial-production/index.html">
 <meta property="og:site_name" content="Debug">
 <meta property="og:description" content="TO be continue
-IndicatorsTech indicatorsSecurityStabilityAvailability
-MTBF (Mean Time Between Failure)
-MTTR (mean time to restoration)
-Availability = (MTBF/(MTBF+MTTR))*100%
+&amp;lt;!-- toc --&amp;gt;
 
-PerformanceOperation indi">
+Indicators
+Tech indicators
+Security
+Stability
+Availability
+Performance
+
+
+Operation indicators
+Trading volume
+CVR (Click Value Rate)
+User account
+PV/UV
+Bounce Rate
+
+
+
+
+Deve">
 <meta property="og:image" content="https://raw.githubusercontent.com/geoxing/photos/master/ci1.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/geoxing/photos/master/ci1p.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/geoxing/photos/master/ci2.png">
@@ -38,16 +68,31 @@ PerformanceOperation indi">
 <meta property="og:image" content="https://raw.githubusercontent.com/geoxing/photos/master/solvestate.PNG">
 <meta property="og:image" content="https://raw.githubusercontent.com/geoxing/photos/master/solvelocalcity.PNG">
 <meta property="og:image" content="https://raw.githubusercontent.com/geoxing/photos/master/solvelocalcity.PNG">
-<meta property="og:updated_time" content="2015-12-21T09:58:12.665Z">
+<meta property="og:updated_time" content="2015-12-22T02:27:43.066Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="How to Develop Commercial Production">
 <meta name="twitter:description" content="TO be continue
-IndicatorsTech indicatorsSecurityStabilityAvailability
-MTBF (Mean Time Between Failure)
-MTTR (mean time to restoration)
-Availability = (MTBF/(MTBF+MTTR))*100%
+&amp;lt;!-- toc --&amp;gt;
 
-PerformanceOperation indi">
+Indicators
+Tech indicators
+Security
+Stability
+Availability
+Performance
+
+
+Operation indicators
+Trading volume
+CVR (Click Value Rate)
+User account
+PV/UV
+Bounce Rate
+
+
+
+
+Deve">
   
   
     <link rel="icon" href="/favicon.ico">
@@ -115,6 +160,89 @@ PerformanceOperation indi">
     <div class="article-entry" itemprop="articleBody">
       
         <p><strong><em>TO be continue</em></strong></p>
+<!-- toc -->
+<ul>
+<li><a href="#indicators">Indicators</a><ul>
+<li><a href="#tech-indicators">Tech indicators</a><ul>
+<li><a href="#security">Security</a></li>
+<li><a href="#stability">Stability</a></li>
+<li><a href="#availability">Availability</a></li>
+<li><a href="#performance">Performance</a></li>
+</ul>
+</li>
+<li><a href="#operation-indicators">Operation indicators</a><ul>
+<li><a href="#trading-volume">Trading volume</a></li>
+<li><a href="#cvr-click-value-rate">CVR (Click Value Rate)</a></li>
+<li><a href="#user-account">User account</a></li>
+<li><a href="#pvuv">PV/UV</a></li>
+<li><a href="#bounce-rate">Bounce Rate</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#development-cycle">Development Cycle</a><ul>
+<li><a href="#requirements">Requirements</a><ul>
+<li><a href="#backlog">BackLog</a></li>
+<li><a href="#user-story">User Story</a></li>
+<li><a href="#uispec">UISpec</a></li>
+</ul>
+</li>
+<li><a href="#design">Design</a><ul>
+<li><a href="#design-drawing">Design drawing</a></li>
+<li><a href="#html-css">html &amp; CSS</a></li>
+</ul>
+</li>
+<li><a href="#develop">Develop</a><ul>
+<li><a href="#develop-environment">develop Environment:</a></li>
+<li><a href="#version-manage-tools-git">Version Manage Tools: git</a></li>
+<li><a href="#package-manager">Package Manager:</a><br>~ <a href="#os-level">OS level</a><br>~ <a href="#language-level">Language level</a></li>
+<li><a href="#branchs-manage-master-develop">Branchs Manage: master  develop</a></li>
+<li><a href="#develop-process-scrum">Develop Process: Scrum</a></li>
+<li><a href="#engineering-ci-continuous-interaction-cdcontinuous-delivery-platformization-framization">Engineering: CI (Continuous interaction) / CD(Continuous delivery) / platformization / Framization</a></li>
+<li><a href="#timer-2-weeks">Timer: 2 weeks</a></li>
+<li><a href="#frontend">FrontEnd</a></li>
+<li><a href="#backend-focus">BackEnd focus</a><br>~ <a href="#high-scalability-timeout">High Scalability: timeout</a><br>~ <a href="#performance-cacheparallelization">Performance: cache/parallelization</a><br>~ <a href="#debug">debug</a><br>~ <a href="#security">Security</a></li>
+</ul>
+</li>
+<li><a href="#integration">Integration</a><ul>
+<li><a href="#tools">tools</a></li>
+<li><a href="#process">process</a><br>~ <a href="#one-project-one-build-for-small-business">one project, one build  for small business</a><br>~ <a href="#multi-projects-one-build-for-mid-business">multi-projects, one build for mid business</a><br>~ <a href="#multi-projects-multi-build-pluginization-for-large-business">multi-projects, multi-build, pluginization for large business</a><br>~ <a href="#eg">e.g</a></li>
+<li><a href="#static-resource-optimization">Static resource optimization</a></li>
+<li><a href="#static-code-review">Static code  review</a></li>
+<li><a href="#develop-output-check"><strong>Develop output check</strong></a></li>
+<li><a href="#build-tools">Build tools</a></li>
+<li><a href="#version-and-config-file">Version and config file</a></li>
+<li><a href="#deploy-tools">deploy tools</a></li>
+<li><a href="#route-bgpborder-gateway-protocol-one-ip-support-accessing-from-various-operators">route: BGP((Border Gateway Protocol), one IP, support accessing from Various Operators</a></li>
+<li><a href="#cdn">CDN:</a></li>
+<li><a href="#vpsvirtual-privates-srever">VPS(Virtual Privates Srever)</a></li>
+<li><a href="#releases-for-various-platform">Releases for various platform</a></li>
+</ul>
+</li>
+<li><a href="#operation">Operation</a><ul>
+<li><a href="#improve-abailability">improve abailability</a></li>
+<li><a href="#monitor-and-warning">Monitor and Warning</a><br>~ <a href="#log-from-frontend-to-backend">Log from frontend to backend</a><ul>
+<li><a href="#exception-log">exception log</a></li>
+<li><a href="#performance-log">performance log</a></li>
+<li><a href="#visit-log">Visit log</a></li>
+<li><a href="#influence-log">Influence log</a></li>
+<li><a href="#trace-log">trace log</a></li>
+<li><a href="#eg">e.g</a><br>~ <a href="#profiling-everything">Profiling everything</a><br>~ <a href="#user-actions">User Actions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#data-analysis">Data Analysis</a><ul>
+<li><a href="#data-sample">Data Sample</a></li>
+<li><a href="#pvuvbouncerate">PV/UV/BounceRate..</a></li>
+<li><a href="#ab-test">A/B Test</a></li>
+</ul>
+</li>
+<li><a href="#recurrence">Recurrence</a></li>
+</ul>
+</li>
+</ul>
+<!-- tocstop -->
 <h1 id="indicators"><a href="#Indicators" class="headerlink" title="Indicators"></a>Indicators</h1><h2 id="tech-indicators"><a href="#Tech_indicators" class="headerlink" title="Tech indicators"></a>Tech indicators</h2><h3 id="security"><a href="#Security" class="headerlink" title="Security"></a>Security</h3><h3 id="stability"><a href="#Stability" class="headerlink" title="Stability"></a>Stability</h3><h3 id="availability"><a href="#Availability" class="headerlink" title="Availability"></a>Availability</h3><ol>
 <li>MTBF (Mean Time Between Failure)</li>
 <li>MTTR (mean time to restoration)</li>
@@ -233,7 +361,7 @@ PerformanceOperation indi">
 <li>for stateless instance<br><img src="https://raw.githubusercontent.com/geoxing/photos/master/solvestateless.PNG" alt="image"></li>
 <li>for state instance<br>HA:master-salve<br>Paxos/raft<br><img src="https://raw.githubusercontent.com/geoxing/photos/master/solvestate.PNG" alt="image"></li>
 <li>for cluster<br>downgrade<br>limit crowding<br>automatic scaling<br>fast fallback</li>
-<li>for data center: multi-IDC</li>
+<li>for data center: multi-IDC  </li>
 <li>for local city<br><img src="https://raw.githubusercontent.com/geoxing/photos/master/solvelocalcity.PNG" alt="image"> </li>
 <li>for domestic  city<br><img src="https://raw.githubusercontent.com/geoxing/photos/master/solvelocalcity.PNG" alt="image"> </li>
 <li>for global</li>
