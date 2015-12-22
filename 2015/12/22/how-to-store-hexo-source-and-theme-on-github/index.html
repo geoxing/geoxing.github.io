@@ -15,7 +15,7 @@ init git and">
 <meta property="og:description" content="When you have the ability to use hexo, you may be wonder what should we do if my device lost orbroken, how to store and transfer my source of hexo, now you need follow below these steps:
 
 init git and">
-<meta property="og:updated_time" content="2015-12-22T07:56:05.277Z">
+<meta property="og:updated_time" content="2015-12-22T09:28:54.815Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="How to Store Hexo Source and Theme on Github">
 <meta name="twitter:description" content="When you have the ability to use hexo, you may be wonder what should we do if my device lost orbroken, how to store and transfer my source of hexo, now you need follow below these steps:
@@ -97,10 +97,9 @@ init git and">
 </li>
 <li><p>add themes/minos<br>if you wants to add themes/minos source,it failed, you will see:  </p>
 <figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fatal: Pathspec <span class="string">&apos;xxxx&apos;</span> <span class="keyword">is</span> <span class="keyword">in</span> submodule <span class="string">&apos;themes/minos&apos;</span></span><br></pre></td></tr></table></figure>
+<p>because .git dir exist in themes/minos, you should do this:</p>
+<figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git rm --cached themes<span class="regexp">/minos/</span></span><br><span class="line">git add themes<span class="regexp">/minos/</span></span><br></pre></td></tr></table></figure>
 </li>
-</ol>
-<p>because .git dir exist in themes/minos, you should do this:<br><figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git rm --cached themes<span class="regexp">/minos/</span></span><br><span class="line">git add themes<span class="regexp">/minos/</span></span><br></pre></td></tr></table></figure></p>
-<ol>
 <li><p>push branch  </p>
 <figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git branch -<span class="keyword">a</span></span><br><span class="line">git remote <span class="built_in">add</span> origin http<span class="variable">s:</span>//github.<span class="keyword">com</span>/geoxing/geoxing.github.io.git</span><br><span class="line">git push --<span class="keyword">set</span>-upstream origin <span class="keyword">source</span></span><br></pre></td></tr></table></figure>
 </li>
