@@ -38,4 +38,11 @@ git branch -a
 git remote add origin https://github.com/geoxing/geoxing.github.io.git
 git push --set-upstream origin source
 ```
-5. over, and enjoy
+5. first store over
+6. update when source changed
+```
+git status
+git add  source/_posts/how-to-store-hexo-source-and-theme-on-github.md
+git push -u origin source
+```
+7. enjoy
