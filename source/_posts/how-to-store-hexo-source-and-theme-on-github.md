@@ -27,11 +27,11 @@ if you wants to add themes/minos source,it failed, you will see:
 ```
 fatal: Pathspec 'xxxx' is in submodule 'themes/minos'
 ```
-because .git dir exist in themes/minos, you should do this:
+  because .git dir exist in themes/minos, you should do this:
 ```
  git rm --cached themes/minos/
  git add themes/minos/
- ```
+```
 4. push branch  
 ```  
 git branch -a
