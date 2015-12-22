@@ -15,7 +15,7 @@ init git and">
 <meta property="og:description" content="When you have the ability to use hexo, you may be wonder what should we do if my device lost orbroken, how to store and transfer my source of hexo, now you need follow below these steps:
 
 init git and">
-<meta property="og:updated_time" content="2015-12-22T07:37:46.936Z">
+<meta property="og:updated_time" content="2015-12-22T07:56:05.277Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="How to Store Hexo Source and Theme on Github">
 <meta name="twitter:description" content="When you have the ability to use hexo, you may be wonder what should we do if my device lost orbroken, how to store and transfer my source of hexo, now you need follow below these steps:
@@ -104,7 +104,12 @@ init git and">
 <li><p>push branch  </p>
 <figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git branch -<span class="keyword">a</span></span><br><span class="line">git remote <span class="built_in">add</span> origin http<span class="variable">s:</span>//github.<span class="keyword">com</span>/geoxing/geoxing.github.io.git</span><br><span class="line">git push --<span class="keyword">set</span>-upstream origin <span class="keyword">source</span></span><br></pre></td></tr></table></figure>
 </li>
-<li><p>over, and enjoy</p>
+<li><p>first store over</p>
+</li>
+<li><p>update when source changed</p>
+<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git status</span><br><span class="line">git <span class="built_in">add</span>  <span class="keyword">source</span>/_posts/how-<span class="keyword">to</span>-store-hexo-<span class="keyword">source</span>-<span class="built_in">and</span>-theme-<span class="keyword">on</span>-github.md</span><br><span class="line">git push -<span class="keyword">u</span> origin <span class="keyword">source</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>enjoy</p>
 </li>
 </ol>
 
