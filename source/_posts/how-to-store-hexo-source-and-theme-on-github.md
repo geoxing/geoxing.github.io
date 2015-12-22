@@ -18,14 +18,24 @@ git branch source
 2. edit .gitignore and add hexo source  
 ```  
 git  status
-git  add *
+git  add * or git add .
 git  add .gitignore
 git  commit -m "add source"
 ```
-3. push branch  
+3. add themes/minos
+if you wants to add themes/minos source,it failed, you will see:  
+```
+fatal: Pathspec 'xxxx' is in submodule 'themes/minos'
+```
+because .git dir exist in themes/minos, you should do this:
+```
+ git rm --cached themes/minos/
+ git add themes/minos/
+ ```
+4. push branch  
 ```  
 git branch -a
 git remote add origin https://github.com/geoxing/geoxing.github.io.git
 git push --set-upstream origin source
 ```
-4. over
+5. over, and enjoy
