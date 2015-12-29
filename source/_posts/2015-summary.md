@@ -13,6 +13,9 @@ tags:
 ![Einstein](https://raw.githubusercontent.com/geoxing/photos/master/Einstein.jpg)
 
 
+<!-- toc -->
+
+
 ## 工作
 
 ### 科研项目统计 
@@ -34,6 +37,8 @@ tags:
  1. 分模块，边测边改。
  2. 每日站会，讨论实现细节。
  3. code review。
+ 
+ <!-- more --> 
  
 ### 日历规范及扩展，29本
 
