@@ -48,7 +48,7 @@ tags:
 
 ### 后端开发
 
-- 使用了Apple的开源项目[calendarserver](http://www.calendarserver.org/),http://www.calendarserver.org/
+- 使用了Apple的开源项目[calendarserver](http://www.calendarserver.org/),*http://www.calendarserver.org/*
 - 这是一个有着32万行代码，历时13年，还在现网运行的史前（oo）巨无霸项目
 - 学会了Python的Twisted、协程等异步与并行
 
@@ -60,11 +60,11 @@ tags:
 
 ### Web版开发
 
-- 使用开源[caldavzap](http://www.inf-it.com/open-source/clients/caldavzap/)，开发了[日历Web版](http://211.136.90.50/) (http://211.136.90.50/)
+- 使用开源[caldavzap](http://www.inf-it.com/open-source/clients/caldavzap/)，开发了[日历Web版](http://211.136.90.50/) *(http://211.136.90.50/)*
 - 学习、使用了WebApp开发中最新的框架React、VueJs、metero等
 - Developer下一个大事，全新的开发模式  
 ![nextGenWebApp](https://raw.githubusercontent.com/geoxing/photos/master/nextgenwebpp.jpg)
-- 学会了MarkDown排版，在GitHub建立了自己的[静态博客](http://geoxing.github.io/), http://geoxing.github.io/  
+- 学会了MarkDown排版，在GitHub建立了自己的[静态博客](http://geoxing.github.io/), *http://geoxing.github.io/*  
   1. 写给自己看，对知识进行沉淀、强化  。
   2. 分享？ 别人看不看没关系，自己爽了就够了。  
   3. 注意细节
@@ -82,20 +82,20 @@ tags:
 - 开发
  1. 每一行代码都可被Measure、Profiling、Tested。
  2. 工程化，阿里的「大中台，小前台」架构，让小白也能够写出高质量的代码。
- 3. code review，可以统计每个开发人员的实际效率、代码贡献率，phabricator from facebook，google’s C++ coding style guide。
+ 3. code review，可以统计每个开发人员的实际效率、代码贡献率，*phabricator from facebook，google’s C++ coding style guide*。
 - 测试、集成、部署： 充分的解耦，并行   
 
  原型产品：开发=>提交=>打包=>测试=>开发。。。=>发布新版。  
-![image](https://raw.githubusercontent.com/geoxing/photos/master/ci1.png)  
-![image](https://raw.githubusercontent.com/geoxing/photos/master/ci1p.png)
+![image from taobao ](https://raw.githubusercontent.com/geoxing/photos/master/ci1.png)  
+![image from taobao ](https://raw.githubusercontent.com/geoxing/photos/master/ci1p.png)
  1. 提测和集成阶段混在一起，提测代码质量较差，开发人员不断的提交修改bug从而导致不断的集成包。
  2. 测试与开发相互影响：发布前回归如发现问题只能等待开发人员修改bug，然后重新出包，再进行一轮回归，如此反复工作量很大。
  2. 模块之间相互影响，一个模块的代码有问题就会影响整个项目的开发人员，任何一个编译不过的问题会造成整个团队在等待。
  3. 回滚只能做到代码级别的回滚。
  
  商业产品:  
-![image](https://raw.githubusercontent.com/geoxing/photos/master/ci3.png)  
-![image](https://raw.githubusercontent.com/geoxing/photos/master/ci3p.png)
+![image from taobao ](https://raw.githubusercontent.com/geoxing/photos/master/ci3.png)  
+![image from taobao ](https://raw.githubusercontent.com/geoxing/photos/master/ci3p.png)
  1. 各个bundle在有着自己的需求、开发、测试计划，相互独立。
  2. 制定发布计划，确定集成窗口和发布时间点, 在集成窗口时间bundle可以自主提交集成。
  3. 集成提交需要走流程，包括填写checklist、代码检查、bug统计、提前编译预集成包进行测试等。这就避免了明显的集成问题遗漏到集成环境中。
@@ -107,11 +107,11 @@ tags:
 - 运营
  1. 以指标驱动-Dashboard，可以发现到底是技术的问题、Marketing的问题。
  2. 每一个商业产品的后台监控管理系统的代码都是功能代码的两倍，甚至更高，为运营、决策、需求做出数字依据。
- 3. 根据自己业务特点，CAP（Consistency，Availability，Partition tolerance）的优先级。
+ 3. 根据自己业务特点，CAP *(Consistency，Availability，Partition tolerance）* 的优先级。
 
 ## 生活
 
-- 瘦了，从150到140，减少6.7% (Quantified Self, QS)，彻底消除了脂肪肝 (Fatty Liver)
+- 瘦了，从150到140，减少6.7%，BMI *（Body Mass Index）* 24.5，正常， *(Quantified Self, QS)*，彻底消除了脂肪肝 *(Fatty Liver)*
 
 ## 展望
  > 「我就是不喜歡舒舒服服的。」——古畑 (tian) 任三郎 
