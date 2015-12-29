@@ -2,12 +2,27 @@ title: 2015 summary
 date: 2015-12-08 09:42:39
 categories: 
 - All   
+- Job
 tags: 
 - Summary
 - Anniversary
 - Prototype
 - Commercial-Grade
 - Product
+- Calendar
+- CalDAV
+- WebDAV
+- iCalendar
+- Twisted
+- Coroutine
+- Python
+- taobao
+- gradle
+- lombok
+- BMI
+- Quantified Self
+- Fatty Liver
+- CAP
 ---
 
 ![Einstein](https://raw.githubusercontent.com/geoxing/photos/master/Einstein.jpg)
@@ -20,8 +35,8 @@ tags:
 
 ### 科研项目统计 
 
-|模块数|开发代码数|测试用例数|工时|培训积分|组织培训数|工会积分|
-|----- |:------:|-------:|------:|--------:|------:|
+|模块数|代码|测试用例|工时|培训积分|组织培训|工会积分|
+|-----|:----:|------:|---:|------:|--------:|------:|
 |51|8000|333|1900|56|1|15|
 
 ### 智能固话中的日历项目-人力外包
@@ -30,6 +45,7 @@ tags:
  1. 让需求跑起来。
  2. 功能之间相互交叉影响到底怎么样的，每个功能与其他功能是否相互影响，比如默认日历与日历设置。
  3. 清晰的业务逻辑代表了清晰的代码，逻辑不闭合，必然引入更多的bug。
+ 
 - 人员招聘 - 太难
  1. 总体：老手带新手，并制定一人负责。
  2. 测试：至少为开发人员的一半，最少两名。
