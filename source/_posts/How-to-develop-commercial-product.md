@@ -1,4 +1,4 @@
-title: How to develop commercial production
+title: How to develop Commercial-Grade product
 date: 2015-12-08 09:03:18
 categories: 
 - Job  
