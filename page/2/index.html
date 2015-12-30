@@ -54,6 +54,170 @@
   </div>
 </header>
     <section id="main" class="outer">
+      <article id="post-build-static-blog-using-github-hexo" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/12/07/build-static-blog-using-github-hexo/">Build Static Blog Using Github &amp; Hexo on Windows</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      <a href="/2015/12/07/build-static-blog-using-github-hexo/" class="article-date">
+  <time datetime="2015-12-07T07:54:33.000Z" itemprop="datePublished">2015-12-07</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Job/">Job</a>
+  </div>
+
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <!-- toc -->
+<ul>
+<li><a href="#configure-environment">Configure environment</a></li>
+<li><a href="#configure-github">Configure Github</a><ul>
+<li><a href="#create-a-repository-from-github-pages">Create a Repository from github pages</a></li>
+<li><a href="#make-a-ssh-key-for-your-computer">Make a SSH-Key for your computer</a></li>
+</ul>
+</li>
+<li><a href="#install-hexo">Install Hexo</a><ul>
+<li><a href="#install-npm-optional">Install npm (optional)</a></li>
+<li><a href="#install-hexo">Install Hexo</a></li>
+<li><a href="#quick-start">Quick Start</a><ul>
+<li><a href="#setup-your-blog">Setup your blog</a></li>
+<li><a href="#start-the-server">Start the server</a></li>
+<li><a href="#create-a-new-post">Create a new post</a></li>
+<li><a href="#generate-static-files">Generate static files</a></li>
+<li><a href="#edit-post">Edit post</a></li>
+<li><a href="#deploy-onto-github">deploy onto Github</a></li>
+<li><a href="#test">Test</a></li>
+<li><a href="#make-a-summary">make a summary:</a></li>
+</ul>
+</li>
+<li><a href="#command-summary">command summary</a><ul>
+<li><a href="#general-command">general command</a></li>
+<li><a href="#composed-command">composed command</a></li>
+<li><a href="#simplify">simplify:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#sundries"><strong>sundries</strong></a><ul>
+<li><a href="#theres-gonna-be-a-space-behind-colon-in-_configymllike-this">there’s gonna be a space  behind colon in _config.yml,like this:</a></li>
+<li><a href="#installconfigureupdate-theme">install、configure、update theme</a><ul>
+<li><a href="#install">install</a></li>
+<li><a href="#configure">configure</a></li>
+<li><a href="#update">update</a></li>
+</ul>
+</li>
+<li><a href="#customize-theme">customize theme</a><ul>
+<li><a href="#comment">comment</a></li>
+<li><a href="#statistic">statistic</a></li>
+<li><a href="#analytics-google_analytics">Analytics google_analytics:</a></li>
+<li><a href="#custom-404-page">Custom 404 page</a></li>
+<li><a href="#sitemap">Sitemap</a><br>~ <a href="#add-in-the-hexo_configyml">add in the Hexo_config.yml:</a><br>~ <a href="#visit-httplocalhost4000sitemapxml-you-can-get-sitemapfile-path-sitemapxml">visit http://localhost:4000/sitemap.xml, you can get sitemap,file path \sitemap.xml</a><br>~ <a href="#show-the-sitemap">show the sitemap</a></li>
+<li><a href="#rss">RSS</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<!-- tocstop -->
+<h2 id="Configure_environment"><a href="#Configure_environment" class="headerlink" title="Configure environment"></a>Configure environment</h2><ol>
+<li>install git , please ref link: <a href="http://www.cnblogs.com/zhcncn/p/3787849.html">http://www.cnblogs.com/zhcncn/p/3787849.html</a>  </li>
+<li>install node.js , download ：<a href="http://nodejs.org/download/,node-v0.10.33-x64.msi">http://nodejs.org/download/,node-v0.10.33-x64.msi</a></li>
+</ol>
+<h2 id="Configure_Github"><a href="#Configure_Github" class="headerlink" title="Configure Github"></a>Configure Github</h2><h3 id="Create_a_Repository_from_github_pages"><a href="#Create_a_Repository_from_github_pages" class="headerlink" title="Create a Repository from github pages"></a>Create a Repository from github pages</h3><ol>
+<li>Registe a account（optional）  </li>
+<li>Choose a free personal plan.（optional）  </li>
+<li>Verify your mail（optional）  </li>
+<li>Make new Repository which must be corresponding to your user name and named your_user_name.github.io  </li>
+<li>In master branch，Repository setting，overwrite automatic page generator  </li>
+<li>Create a github user pages site（optional）  </li>
+<li>Choose a theme（optional）  </li>
+<li>Publish（optional)  </li>
+</ol>
+        
+          <p class="article-more-link">
+            <a href="/2015/12/07/build-static-blog-using-github-hexo/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    
+    
+      <footer class="article-footer">
+        
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Github/">Github</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Window/">Window</a></li></ul>
+
+      </footer>
+    
+  </div>
+  
+</article>
+
+
+    
+      <article id="post-transport-codes-from-svn-to-git" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/12/07/transport-codes-from-svn-to-git/">Transport Codes From Svn to Git</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      <a href="/2015/12/07/transport-codes-from-svn-to-git/" class="article-date">
+  <time datetime="2015-12-07T03:59:14.000Z" itemprop="datePublished">2015-12-07</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Job/">Job</a>
+  </div>
+
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="1-_install_git_client"><a href="#1-_install_git_client" class="headerlink" title="1. install git client"></a>1. install git client</h2><p>download git client from github  </p>
+<h2 id="2-_new_git_project"><a href="#2-_new_git_project" class="headerlink" title="2. new git project"></a>2. new git project</h2><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">cd dir    </span><br><span class="line">git <span class="keyword">clone</span> <span class="title">http</span>://ip:port/user/project.git    </span><br><span class="line">git init  </span><br><span class="line">git remote add origin git@ip:user/project.git</span><br></pre></td></tr></table></figure>
+<p>and so on  </p>
+        
+          <p class="article-more-link">
+            <a href="/2015/12/07/transport-codes-from-svn-to-git/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    
+    
+      <footer class="article-footer">
+        
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Git/">Git</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Svn/">Svn</a></li></ul>
+
+      </footer>
+    
+  </div>
+  
+</article>
+
+
+    
       <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     

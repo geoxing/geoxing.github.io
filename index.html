@@ -54,6 +54,92 @@
   </div>
 </header>
     <section id="main" class="outer">
+      <article id="post-Entropy-Theory" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/12/30/Entropy-Theory/">Entropy Theory</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      <a href="/2015/12/30/Entropy-Theory/" class="article-date">
+  <time datetime="2015-12-30T05:55:49.000Z" itemprop="datePublished">2015-12-30</time>
+</a>
+      
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+      
+    </div>
+    
+    
+  </div>
+  
+</article>
+
+
+    
+      <article id="post-a-ragbag-of-Bitcoin" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/12/30/a-ragbag-of-Bitcoin/">A Ragbag of Bitcoin</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      <a href="/2015/12/30/a-ragbag-of-Bitcoin/" class="article-date">
+  <time datetime="2015-12-30T03:21:13.000Z" itemprop="datePublished">2015-12-30</time>
+</a>
+      
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>To Be Continued</p>
+<h1 id="block-chain-and-byzantine-generals-problem"><a href="#Block_Chain_and_Byzantine_Generals_u2019_Problem" class="headerlink" title="Block Chain and Byzantine Generals&#x2019; Problem"></a>Block Chain and Byzantine Generals&#x2019; Problem</h1><p>all come from <em>Paul Bohm</em>&#x2018;s answer on  <a href="https://www.quora.com/Is-the-cryptocurrency-Bitcoin-a-good-idea" target="_blank" rel="external">quora question</a><br>It inspired me.  </p>
+<blockquote>
+<p>Bitcoin is a theoretical and practical breakthrough that makes it possible to decentralize services we couldn&#x2019;t previously decentralize.</p>
+<p>To elaborate: Bitcoin isn&#x2019;t just a currency but an elegant universal solution to the Byzantine Generals&#x2019; Problem[1] in computing, one of the core challenges in reaching consensus in distributed systems. Until recently the problem was thought not to be solvable at all, much less on a global scale. Regardless of its currency aspects, many experts believe Bitcoin is brilliant, in that it technically makes possible what was previously thought to be impossible.</p>
+<p>The Byzantine Generals&#x2019; Problem goes roughly as follows: N Generals have their armies camped outside a city they want to invade. They know their numbers are strong enough that if at least half of them attack at the same time, they&#x2019;ll be victorious. But if they don&#x2019;t coordinate the time of attack, they&#x2019;ll be spread too thin and will all die. They also suspect that some of the Generals might be disloyal and will send fake messages. Since they can only communicate by messenger, they have no means to verify the authenticity of a message. How, then, can such a large group reach consensus on the time of attack without mutual trust or a central authority, especially when faced with adversaries intent on confusing them?</p>
+<p>itcoin&#x2019;s solution is this: All of the Generals start working on a mathematical problem that statistically should take 10 minutes to solve if all of them work on it. Once one of them finds the solution, she broadcasts that solution to all the other Generals. This solution then becomes the next problem. Everyone then stops to work on the previous problem, and proceeds to use the previous solution as the next problem&#x2014;which again should take another 10 minutes. Every General always starts building upon (using as the problem) the longest chain of solutions he&#x2019;s seen. After a solution has been built upon (extended) 12 times, every General can be certain that no attacker controlling less than half the computational resources could have created another chain of similar length, because it took a lot of computational resources to extend the chain 12 times. The existence of the 12-block chain of solutions is proof that a majority of Generals have participated in its creation. This is called a proof-of-work scheme.</p>
+<p>If this sounds confusing, don&#x2019;t worry. What it means is simply that consensus is reached because computational resources are scarce. You vote with work. So to rig the vote, an attacker would need to control more computational power than the honest participants have. Also, to ensure that it&#x2019;s more expensive for an attacker to purchase the computational power needed to attack the system, Bitcoin adds an incentive scheme. Users who contribute computational power get rewarded for their work. Thus, if the value of a Bitcoin rises and attacking the system becomes more profitable, it also becomes more profitable for honest users to add computational resources. Here&#x2019;s an example of how this works: At any given point, one would expect miners to invest as many resources into mining as is profitable for them. Bitcoin then also is a currency, because it needs incentives to protect the consensus process from attackers. This computational process (&#x201C;mining&#x201D;) is not wasteful, but an incredibly efficient way to make attacks economically unprofitable. Bitcoin never uses more computational resources than necessary to protect the integrity of its interactions.</p>
+<p>Now let&#x2019;s return to discussing the value provided by Bitcoin. Essentially it&#x2019;s a means to make consensus in highly distributed large-scale systems that would otherwise never be able to accomplish that. The value of this is, that it&#x2019;s now possible to build applications in a decentralized fashion that we previously thought could not be built without a central authority. The most obvious example is of Bitcoin as a medium of exchange for goods and services that can&#x2019;t be easily bought or sold using cash issued by a central authority. But there&#x2019;s more. Bitcoin also makes it possible to fully decentralize the DNS (Domain Name System). Every Bitcoin Domain Name comes with a cryptographic key pair, which also allows us to solve the PKI (Public Key Infrastructure) problem: every name you connect to, has an encryption key associated with it that can be verified without having to trust a central authority. Moreover, in case network traffic monitoring prevents people from accessing information either at all or anonymously, Bitcoin makes it feasible to pay for internet relays that anonymize or reroute traffic&#x2014;that is, it makes it easier to remove central control and fight censorship. The list of benefits goes on, and I&#x2019;ve been hard-pressed to find any decentralization schemes that would not benefit from Bitcoin integration.</p>
+<p>The pattern here is that almost all of these applications can already be built in centralized form. But often the centralized solution comes with many weaknesses. In the PKI case, you have to trust over 300 Certificate Authorities every time you make an https:// connection, many of which are located in countries with repressive governments. If any of those 300 entities are compromised, malevolent attackers will be able to read your email, access your bank account, and violate your privacy. DNS is being censored by governments simply because they can do it. And every time you store value in currency, you&#x2019;re trusting a central authority to ensure that it isn&#x2019;t mismanaged and won&#x2019;t depreciate in value.</p>
+<p>So is there really value in Bitcoin? The answer depends entirely on your perspective. Let me ask a counter question: Is decentralization valuable? If you think we&#x2019;ll increasingly lose trust in the central authorities that manage the infrastructure we rely on, you might expect Bitcoins to rise a lot in value. If, however, you believe that authorities will be able to tackle the challenges of the future better in centralized form, then from your perspective Bitcoins don&#x2019;t add value. Time will tell which viewpoint is correct.</p>
+</blockquote>
+
+      
+    </div>
+    
+    
+      <footer class="article-footer">
+        
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Bitcoin/">Bitcoin</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Block-Chain/">Block Chain</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Byzantine-Generals-Problem/">Byzantine Generals' Problem</a></li></ul>
+
+      </footer>
+    
+  </div>
+  
+</article>
+
+
+    
       <article id="post-something-about-Lawrence-Li" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -667,6 +753,7 @@
 </ol>
 <h4 id="security"><a href="#Security-1" class="headerlink" title="Security"></a>Security</h4><h2 id="integration"><a href="#Integration" class="headerlink" title="Integration"></a>Integration</h2><h3 id="tools"><a href="#tools" class="headerlink" title="tools"></a>tools</h3><ol>
 <li>jenkins </li>
+<li><a href="https://travis-ci.org/" target="_blank" rel="external">Travis CI</a> based on GitHub</li>
 </ol>
 <h3 id="process"><a href="#process" class="headerlink" title="process"></a>process</h3><h4 id="one-project-one-build-for-small-business"><a href="#one_project_2C_one_build_for_small_business" class="headerlink" title="one project, one build  for small business"></a>one project, one build  for small business</h4><ul>
 <li>Project Architecture diagram<br><img src="https://raw.githubusercontent.com/geoxing/photos/master/ci1.png" alt="image"></li>
@@ -774,170 +861,6 @@
       <footer class="article-footer">
         
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Analysis/">Analysis</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Cycle/">Cycle</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Design/">Design</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Develop/">Develop</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Integration/">Integration</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Operation/">Operation</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Requirements/">Requirements;</a></li></ul>
-
-      </footer>
-    
-  </div>
-  
-</article>
-
-
-    
-      <article id="post-build-static-blog-using-github-hexo" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/12/07/build-static-blog-using-github-hexo/">Build Static Blog Using Github &amp; Hexo on Windows</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-meta">
-      <a href="/2015/12/07/build-static-blog-using-github-hexo/" class="article-date">
-  <time datetime="2015-12-07T07:54:33.000Z" itemprop="datePublished">2015-12-07</time>
-</a>
-      
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Job/">Job</a>
-  </div>
-
-      
-    </div>
-    <div class="article-entry" itemprop="articleBody">
-      
-        <!-- toc -->
-<ul>
-<li><a href="#configure-environment">Configure environment</a></li>
-<li><a href="#configure-github">Configure Github</a><ul>
-<li><a href="#create-a-repository-from-github-pages">Create a Repository from github pages</a></li>
-<li><a href="#make-a-ssh-key-for-your-computer">Make a SSH-Key for your computer</a></li>
-</ul>
-</li>
-<li><a href="#install-hexo">Install Hexo</a><ul>
-<li><a href="#install-npm-optional">Install npm (optional)</a></li>
-<li><a href="#install-hexo">Install Hexo</a></li>
-<li><a href="#quick-start">Quick Start</a><ul>
-<li><a href="#setup-your-blog">Setup your blog</a></li>
-<li><a href="#start-the-server">Start the server</a></li>
-<li><a href="#create-a-new-post">Create a new post</a></li>
-<li><a href="#generate-static-files">Generate static files</a></li>
-<li><a href="#edit-post">Edit post</a></li>
-<li><a href="#deploy-onto-github">deploy onto Github</a></li>
-<li><a href="#test">Test</a></li>
-<li><a href="#make-a-summary">make a summary:</a></li>
-</ul>
-</li>
-<li><a href="#command-summary">command summary</a><ul>
-<li><a href="#general-command">general command</a></li>
-<li><a href="#composed-command">composed command</a></li>
-<li><a href="#simplify">simplify:</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#sundries"><strong>sundries</strong></a><ul>
-<li><a href="#theres-gonna-be-a-space-behind-colon-in-_configymllike-this">there’s gonna be a space  behind colon in _config.yml,like this:</a></li>
-<li><a href="#installconfigureupdate-theme">install、configure、update theme</a><ul>
-<li><a href="#install">install</a></li>
-<li><a href="#configure">configure</a></li>
-<li><a href="#update">update</a></li>
-</ul>
-</li>
-<li><a href="#customize-theme">customize theme</a><ul>
-<li><a href="#comment">comment</a></li>
-<li><a href="#statistic">statistic</a></li>
-<li><a href="#analytics-google_analytics">Analytics google_analytics:</a></li>
-<li><a href="#custom-404-page">Custom 404 page</a></li>
-<li><a href="#sitemap">Sitemap</a><br>~ <a href="#add-in-the-hexo_configyml">add in the Hexo_config.yml:</a><br>~ <a href="#visit-httplocalhost4000sitemapxml-you-can-get-sitemapfile-path-sitemapxml">visit http://localhost:4000/sitemap.xml, you can get sitemap,file path \sitemap.xml</a><br>~ <a href="#show-the-sitemap">show the sitemap</a></li>
-<li><a href="#rss">RSS</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<!-- tocstop -->
-<h2 id="Configure_environment"><a href="#Configure_environment" class="headerlink" title="Configure environment"></a>Configure environment</h2><ol>
-<li>install git , please ref link: <a href="http://www.cnblogs.com/zhcncn/p/3787849.html">http://www.cnblogs.com/zhcncn/p/3787849.html</a>  </li>
-<li>install node.js , download ：<a href="http://nodejs.org/download/,node-v0.10.33-x64.msi">http://nodejs.org/download/,node-v0.10.33-x64.msi</a></li>
-</ol>
-<h2 id="Configure_Github"><a href="#Configure_Github" class="headerlink" title="Configure Github"></a>Configure Github</h2><h3 id="Create_a_Repository_from_github_pages"><a href="#Create_a_Repository_from_github_pages" class="headerlink" title="Create a Repository from github pages"></a>Create a Repository from github pages</h3><ol>
-<li>Registe a account（optional）  </li>
-<li>Choose a free personal plan.（optional）  </li>
-<li>Verify your mail（optional）  </li>
-<li>Make new Repository which must be corresponding to your user name and named your_user_name.github.io  </li>
-<li>In master branch，Repository setting，overwrite automatic page generator  </li>
-<li>Create a github user pages site（optional）  </li>
-<li>Choose a theme（optional）  </li>
-<li>Publish（optional)  </li>
-</ol>
-        
-          <p class="article-more-link">
-            <a href="/2015/12/07/build-static-blog-using-github-hexo/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    
-    
-      <footer class="article-footer">
-        
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Github/">Github</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Window/">Window</a></li></ul>
-
-      </footer>
-    
-  </div>
-  
-</article>
-
-
-    
-      <article id="post-transport-codes-from-svn-to-git" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/12/07/transport-codes-from-svn-to-git/">Transport Codes From Svn to Git</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-meta">
-      <a href="/2015/12/07/transport-codes-from-svn-to-git/" class="article-date">
-  <time datetime="2015-12-07T03:59:14.000Z" itemprop="datePublished">2015-12-07</time>
-</a>
-      
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Job/">Job</a>
-  </div>
-
-      
-    </div>
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="1-_install_git_client"><a href="#1-_install_git_client" class="headerlink" title="1. install git client"></a>1. install git client</h2><p>download git client from github  </p>
-<h2 id="2-_new_git_project"><a href="#2-_new_git_project" class="headerlink" title="2. new git project"></a>2. new git project</h2><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">cd dir    </span><br><span class="line">git <span class="keyword">clone</span> <span class="title">http</span>://ip:port/user/project.git    </span><br><span class="line">git init  </span><br><span class="line">git remote add origin git@ip:user/project.git</span><br></pre></td></tr></table></figure>
-<p>and so on  </p>
-        
-          <p class="article-more-link">
-            <a href="/2015/12/07/transport-codes-from-svn-to-git/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    
-    
-      <footer class="article-footer">
-        
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Git/">Git</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Svn/">Svn</a></li></ul>
 
       </footer>
     
