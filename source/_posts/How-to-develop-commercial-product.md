@@ -89,6 +89,7 @@ Stress Testing tool:
 ## Integration
 ### tools
 1. jenkins 
+2. [Travis CI](https://travis-ci.org/) based on GitHub
 
 ### process
 #### one project, one build  for small business  
