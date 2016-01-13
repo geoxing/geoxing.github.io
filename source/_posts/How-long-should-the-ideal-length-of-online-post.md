@@ -10,6 +10,9 @@ tags:
 This post come from [the-ideal-length-of-everything-online-according-to-science](https://blog.bufferapp.com/the-ideal-length-of-everything-online-according-to-science)
 and [their updater](https://blog.bufferapp.com/optimal-length-social-media)   
 How long should my tweet be? Or my blogpost? Or my headline?  
+
+ <!-- more --> 
+ 
 ![social-media-length-infographic](https://raw.githubusercontent.com/geoxing/photos/master/social-media-length-infographic1.jpg)  
 ![social-media-length-infographic](https://raw.githubusercontent.com/geoxing/photos/master/social-media-length-infographic2.png)  
 ![social-media-length-infographic](https://raw.githubusercontent.com/geoxing/photos/master/social-media-length-infographic3.png)  
