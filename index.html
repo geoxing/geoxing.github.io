@@ -189,29 +189,7 @@
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <!-- toc -->
-<ul>
-<li><a href="#我理解的测试及质量保证">我理解的测试及质量保证</a><ul>
-<li><a href="#测试是保证软件质量的下策">测试是保证软件质量的下策</a></li>
-<li><a href="#为什么都讨厌测试">为什么都讨厌测试？</a></li>
-<li><a href="#质量保证是什么-在业界怎么做的一个系统工程">质量保证是什么？ 在业界怎么做的？一个系统工程</a><ul>
-<li><a href="#编码阶段规范及code-review">编码阶段：规范及Code Review:</a></li>
-<li><a href="#测试与持续集成发布阶段">测试与持续集成、发布阶段：</a></li>
-<li><a href="#产品发布后数据收集分析与监控告警">产品发布后，数据收集分析与监控告警</a></li>
-</ul>
-</li>
-<li><a href="#当前环境">当前环境</a></li>
-<li><a href="#结合当前实际情况能做的">结合当前实际情况，能做的：</a><ul>
-<li><a href="#组织架构与流程">组织架构与流程</a></li>
-<li><a href="#善用自动化测试与测试工具方面">善用自动化测试与测试工具方面</a></li>
-<li><a href="#完善数据收集分析与监控告警">完善数据收集分析与监控告警</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<!-- tocstop -->
-<h1 id="u6211_u7406_u89E3_u7684_u6D4B_u8BD5_u53CA_u8D28_u91CF_u4FDD_u8BC1"><a href="#u6211_u7406_u89E3_u7684_u6D4B_u8BD5_u53CA_u8D28_u91CF_u4FDD_u8BC1" class="headerlink" title="我理解的测试及质量保证"></a>我理解的测试及质量保证</h1><h2 id="u6D4B_u8BD5_u662F_u4FDD_u8BC1_u8F6F_u4EF6_u8D28_u91CF_u7684_u4E0B_u7B56"><a href="#u6D4B_u8BD5_u662F_u4FDD_u8BC1_u8F6F_u4EF6_u8D28_u91CF_u7684_u4E0B_u7B56" class="headerlink" title="测试是保证软件质量的下策"></a>测试是保证软件质量的下策</h2><p>可以从两方面验证一个软件正确性：</p>
+        <h1 id="u6211_u7406_u89E3_u7684_u6D4B_u8BD5_u53CA_u8D28_u91CF_u4FDD_u8BC1"><a href="#u6211_u7406_u89E3_u7684_u6D4B_u8BD5_u53CA_u8D28_u91CF_u4FDD_u8BC1" class="headerlink" title="我理解的测试及质量保证"></a>我理解的测试及质量保证</h1><h2 id="u6D4B_u8BD5_u662F_u4FDD_u8BC1_u8F6F_u4EF6_u8D28_u91CF_u7684_u4E0B_u7B56"><a href="#u6D4B_u8BD5_u662F_u4FDD_u8BC1_u8F6F_u4EF6_u8D28_u91CF_u7684_u4E0B_u7B56" class="headerlink" title="测试是保证软件质量的下策"></a>测试是保证软件质量的下策</h2><p>可以从两方面验证一个软件正确性：</p>
 <ul>
 <li>Formal Verification（形式证明）<br>给出一个描述，软件应该怎么样，通过逻辑分析或数学推理，证明我这个功能是100%不会出错的，没有特例。</li>
 <li>测试<br>根据预设的条件，选取一些正常的，特殊的或边际点，看能否得出预期的正确的或错误的结论，肯定有一些路径是没有测试到的，只有一部分测到的地方把握没错。</li>
