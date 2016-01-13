@@ -27,8 +27,6 @@ tags:
 ![Einstein](https://raw.githubusercontent.com/geoxing/photos/master/Einstein.jpg)
 
 
-<!-- toc -->
-
 
 ## 工作
 

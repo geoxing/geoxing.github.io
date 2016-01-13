@@ -12,7 +12,6 @@ tags:
 - Cycle
 ---
 ***TO be continue***
-<!-- toc -->
 
 # Indicators  
 ## Tech indicators  

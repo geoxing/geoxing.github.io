@@ -8,8 +8,6 @@ tags:
  - Window
 ---
 
-<!-- toc -->
-
 ## Configure environment
 1. install git , please ref link: http://www.cnblogs.com/zhcncn/p/3787849.html  
 2. install node.js , download ：http://nodejs.org/download/,node-v0.10.33-x64.msi

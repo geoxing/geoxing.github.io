@@ -25,8 +25,6 @@ tags:
 - Fashion
 ---
 
-<!-- toc -->
-
 The following infomation completely come from [lawrencelry's answers on zhihu](https://www.zhihu.com/people/lawrencelry/answers)  
 Now, let's go:  
 
