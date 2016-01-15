@@ -10,6 +10,9 @@ tags:
 You can follow along with this tutorial.In this way you finally breaok the GFW, access everything you want from china.
 # Get Started
 OK, let's go!
+
+ <!-- more --> 
+ 
 # Register DigitalOcean and get a cloud host
 DigitalOcean, Inc. is an American internet services provider based in New York City. The company leases capacity from existing data centers, including sites in New York, Amsterdam, San Francisco, Toronto, London, Singapore and Frankfurt. 
 1. visit the DigitalOcean'shomepage and sign up a account  
@@ -52,14 +55,13 @@ The key fingerprint is:
   ```
   apt-get update
   ```
-  
- 4. install shadowsocks
-In the enviorment of Debian / Ubuntu: 
+ 4. install shadowsocks  
+  In the enviorment of Debian / Ubuntu: 
   ```
   apt-get install python-pip
   pip install shadowsocks
   ```
-In the enviorment of CentOS:
+  In the enviorment of CentOS:
   ```
   yum install python-setuptools && easy_install pip
   pip install shadowsocks
@@ -79,7 +81,6 @@ add:
     "fast_open": false
 }
  ```
- 
  6. start the servers:
 ```
 ssserver -c /etc/shadowsocks.json -d start
