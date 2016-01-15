@@ -6,21 +6,18 @@
   <title>How to Break GFW by Using DigitalOcean and Shadowsocks? - Debug</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="You can follow along with this tutorial.In this way you finally breaok the GFW, access everything you want from china.
-Get StartedOK, let&amp;#x2019;s go!
-Register DigitalOcean and get a cloud hostDigital">
+Get StartedOK, let’s go!">
 <meta property="og:type" content="article">
 <meta property="og:title" content="How to Break GFW by Using DigitalOcean and Shadowsocks?">
 <meta property="og:url" content="http://yoursite.com/2016/01/15/how-to-break-GFW-by-using-DigitalOcean-and-Shadowsocks/index.html">
 <meta property="og:site_name" content="Debug">
 <meta property="og:description" content="You can follow along with this tutorial.In this way you finally breaok the GFW, access everything you want from china.
-Get StartedOK, let&amp;#x2019;s go!
-Register DigitalOcean and get a cloud hostDigital">
-<meta property="og:updated_time" content="2016-01-15T10:22:52.813Z">
+Get StartedOK, let’s go!">
+<meta property="og:updated_time" content="2016-01-15T10:26:43.859Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="How to Break GFW by Using DigitalOcean and Shadowsocks?">
 <meta name="twitter:description" content="You can follow along with this tutorial.In this way you finally breaok the GFW, access everything you want from china.
-Get StartedOK, let&amp;#x2019;s go!
-Register DigitalOcean and get a cloud hostDigital">
+Get StartedOK, let’s go!">
   
   
     <link rel="icon" href="/favicon.ico">
@@ -89,6 +86,7 @@ Register DigitalOcean and get a cloud hostDigital">
       
         <p>You can follow along with this tutorial.In this way you finally breaok the GFW, access everything you want from china.</p>
 <h1 id="get-started"><a href="#Get_Started" class="headerlink" title="Get Started"></a>Get Started</h1><p>OK, let&#x2019;s go!</p>
+ <a id="more"></a> 
 <h1 id="register-digitalocean-and-get-a-cloud-host"><a href="#Register_DigitalOcean_and_get_a_cloud_host" class="headerlink" title="Register DigitalOcean and get a cloud host"></a>Register DigitalOcean and get a cloud host</h1><p>DigitalOcean, Inc. is an American internet services provider based in New York City. The company leases capacity from existing data centers, including sites in New York, Amsterdam, San Francisco, Toronto, London, Singapore and Frankfurt. </p>
 <ol>
 <li>visit the DigitalOcean&#x2019;shomepage and sign up a account  </li>
@@ -120,22 +118,22 @@ Register DigitalOcean and get a cloud hostDigital">
 <h1 id="install-shadowsocks-on-digitalocean-server"><a href="#Install_shadowsocks_on_digitalocean_server" class="headerlink" title="Install shadowsocks on digitalocean server"></a>Install shadowsocks on digitalocean server</h1><ol>
 <li>login your  droplet</li>
 <li>change your default password</li>
-<li><p>update depencies</p>
-<figure class="highlight q"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt-<span class="built_in">get</span> <span class="keyword">update</span></span><br></pre></td></tr></table></figure>
+<li>update depencies<figure class="highlight q"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt-<span class="built_in">get</span> <span class="keyword">update</span></span><br></pre></td></tr></table></figure>
 </li>
-<li><p>install shadowsocks<br>In the enviorment of Debian / Ubuntu: </p>
-<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">apt-get <span class="keyword">install</span> python-pip</span><br><span class="line">pip <span class="keyword">install</span> shadowsocks</span><br></pre></td></tr></table></figure>
+</ol>
+<ol>
+<li>install shadowsocks<br>In the enviorment of Debian / Ubuntu: <figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">apt-get <span class="keyword">install</span> python-pip</span><br><span class="line">pip <span class="keyword">install</span> shadowsocks</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
 <p>In the enviorment of CentOS:<br>  <figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">yum <span class="keyword">install</span> python-setuptools &amp;&amp; easy_install pip</span><br><span class="line">pip <span class="keyword">install</span> shadowsocks</span><br></pre></td></tr></table></figure></p>
 <ol>
-<li><p>config the  shadowsocks server</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/shadowsocks.json</span><br><span class="line">add:</span><br><span class="line">{</span><br><span class="line">    <span class="string">&quot;server&quot;</span>:<span class="string">&quot;ip address&quot;</span>,</span><br><span class="line">    <span class="string">&quot;server_port&quot;</span>:<span class="number">8388</span>,</span><br><span class="line">    <span class="string">&quot;local_address&quot;</span>: <span class="string">&quot;127.0.0.1&quot;</span>,</span><br><span class="line">    <span class="string">&quot;local_port&quot;</span>:<span class="number">1080</span>,</span><br><span class="line">    <span class="string">&quot;password&quot;</span>:<span class="string">&quot;your password&quot;</span>,</span><br><span class="line">    <span class="string">&quot;timeout&quot;</span>:<span class="number">300</span>,</span><br><span class="line">    <span class="string">&quot;method&quot;</span>:<span class="string">&quot;aes-256-cfb&quot;</span>,</span><br><span class="line">    <span class="string">&quot;fast_open&quot;</span>: <span class="literal">false</span></span><br><span class="line">}</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>start the servers:</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssserver -c /etc/shadowsocks.json -d <span class="operator"><span class="keyword">start</span></span><br><span class="line">ssserver -<span class="keyword">c</span> /etc/shadowsocks.<span class="keyword">json</span> -<span class="keyword">d</span> <span class="keyword">stop</span></span></span><br></pre></td></tr></table></figure>
+<li>config the  shadowsocks server<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/shadowsocks.json</span><br><span class="line">add:</span><br><span class="line">{</span><br><span class="line">    <span class="string">&quot;server&quot;</span>:<span class="string">&quot;ip address&quot;</span>,</span><br><span class="line">    <span class="string">&quot;server_port&quot;</span>:<span class="number">8388</span>,</span><br><span class="line">    <span class="string">&quot;local_address&quot;</span>: <span class="string">&quot;127.0.0.1&quot;</span>,</span><br><span class="line">    <span class="string">&quot;local_port&quot;</span>:<span class="number">1080</span>,</span><br><span class="line">    <span class="string">&quot;password&quot;</span>:<span class="string">&quot;your password&quot;</span>,</span><br><span class="line">    <span class="string">&quot;timeout&quot;</span>:<span class="number">300</span>,</span><br><span class="line">    <span class="string">&quot;method&quot;</span>:<span class="string">&quot;aes-256-cfb&quot;</span>,</span><br><span class="line">    <span class="string">&quot;fast_open&quot;</span>: <span class="literal">false</span></span><br><span class="line">}</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
+<ol>
+<li>start the servers:</li>
+</ol>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssserver -c /etc/shadowsocks.json -d <span class="operator"><span class="keyword">start</span></span><br><span class="line">ssserver -<span class="keyword">c</span> /etc/shadowsocks.<span class="keyword">json</span> -<span class="keyword">d</span> <span class="keyword">stop</span></span></span><br></pre></td></tr></table></figure>
 <h1 id="install-and-use-shadowsocks-client-on-mobile-phonewindowslinux"><a href="#Install_and_use_shadowsocks_client_on_mobile_phone/windows/linux" class="headerlink" title="Install and use shadowsocks client on mobile phone/windows/linux"></a>Install and use shadowsocks client on mobile phone/windows/linux</h1><p>It&#x2019;s very simple, download clients, install them, configure them, and enjoy them.</p>
 
       
