@@ -54,6 +54,63 @@
   </div>
 </header>
     <section id="main" class="outer">
+      <article id="post-add-images-using-github-as-imagebed-in-markdown" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/12/18/add-images-using-github-as-imagebed-in-markdown/">Add Local Images Using Github as Imagebed in Markdown</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      <a href="/2015/12/18/add-images-using-github-as-imagebed-in-markdown/" class="article-date">
+  <time datetime="2015-12-18T03:19:03.000Z" itemprop="datePublished">2015-12-18</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Job/">Job</a>
+  </div>
+
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>In the post <a href="http://geoxing.github.io/2015/12/08/How-to-develop-commercial-production/" target="_blank" rel="external">How to develop commercial production</a><br>I get a problem&#xFF0C;like the expression shown:<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">- </span>Project Architecture diagram  </span><br><span class="line">![<span class="link_label">image</span>](<span class="link_url">file:E:\geoxing.github.io\ci1.png</span>)</span><br><span class="line"><span class="bullet">- </span>develop process diagram  </span><br><span class="line">![<span class="link_label">image</span>](<span class="link_url">file:E:\geoxing.github.io\ci1p.png</span>)</span><br><span class="line"><span class="bullet">- </span>Quality Assurance  </span><br><span class="line">hand-test</span><br><span class="line"><span class="header">#### multi-projects, one build for mid business  </span></span><br><span class="line">Module num &gt; 20  </span><br><span class="line">develop num &gt; 100  </span><br><span class="line"><span class="bullet">- </span>Project Architecture diagram  </span><br><span class="line">![<span class="link_label">image</span>](<span class="link_url">file:E:\geoxing.github.io\ci2.png</span>)</span><br><span class="line"><span class="bullet">- </span>develop process diagram:</span><br><span class="line">commit role: from dev to bundle</span><br><span class="line">commit way: from committing code  to repositories</span><br><span class="line">![<span class="link_label">image</span>](<span class="link_url">file:E:\geoxing.github.io\ci2p.png</span>)</span><br><span class="line">![<span class="link_label">image</span>](<span class="link_url">file:E:\geoxing.github.io\ci2d.png</span>)</span><br><span class="line"><span class="bullet">- </span>Quality Assurance  </span><br><span class="line">make code review platform  </span><br><span class="line">make bundle platform  </span><br><span class="line">make buider platform  </span><br><span class="line">make test platform  </span><br><span class="line">make insepection platform  </span><br><span class="line">make gray release process  </span><br><span class="line">![<span class="link_label">image</span>](<span class="link_url">file:E:\geoxing.github.io\ci2q.png</span>)</span><br><span class="line"><span class="header">#### multi-projects, multi-build, pluginization for large business</span></span><br><span class="line">every Module is individual on the develp,code review,integration,test</span><br><span class="line"><span class="bullet">- </span>Project Architecture diagram  </span><br><span class="line">![<span class="link_label">image</span>](<span class="link_url">file:E:\geoxing.github.io\ci3.png</span>)</span><br><span class="line"><span class="bullet">- </span>develop process diagram:</span><br><span class="line">![<span class="link_label">image</span>](<span class="link_url">file:E:\geoxing.github.io\ci3p.png</span>)</span><br><span class="line">bundle dev phase  </span><br><span class="line">integration phase  </span><br><span class="line">release phase  </span><br><span class="line"><span class="bullet">- </span>Quality Assurance: CI,CD    </span><br><span class="line">![<span class="link_label">image</span>](<span class="link_url">file:E:\geoxing.github.io\ci3q.png</span>)</span><br></pre></td></tr></table></figure></p>
+<p>and,after it is be  generated, deployed, and tested , all the images gone.<br>finally, I figure out the imagebed must be used, and github may be available<br>so, the steps is:  </p>
+<ol>
+<li>create a repositories named photos on github</li>
+<li>make dir named photos</li>
+<li>git bash on dir</li>
+<li><p>add images into the github</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br><span class="line">git add *<span class="class">.png</span>,*<span class="class">.jpg</span></span><br><span class="line">git commit -m <span class="string">&quot;add some markdown photos&quot;</span></span><br><span class="line">git remote add origin https:<span class="comment">//github.com/geoxing/photos.git</span></span><br><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>replace the local path by  the raw path of image on the github</p>
+</li>
+<li>enjoy!</li>
+</ol>
+
+      
+    </div>
+    
+    
+      <footer class="article-footer">
+        
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Github/">Github</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Markdown/">Markdown</a></li></ul>
+
+      </footer>
+    
+  </div>
+  
+</article>
+
+
+    
       <article id="post-order-of-last-name-family-name-surname-and-first-name-from-chinese-name" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
