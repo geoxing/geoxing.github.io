@@ -54,6 +54,74 @@
   </div>
 </header>
     <section id="main" class="outer">
+      <article id="post-how-to-store-hexo-source-and-theme-on-github" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/12/22/how-to-store-hexo-source-and-theme-on-github/">How to Store Hexo Source and Theme on Github</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      <a href="/2015/12/22/how-to-store-hexo-source-and-theme-on-github/" class="article-date">
+  <time datetime="2015-12-22T05:52:16.000Z" itemprop="datePublished">2015-12-22</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Job/">Job</a>
+  </div>
+
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>When you have the ability to use hexo, you may be wonder what should we do if my device lost or<br>broken, how to store and transfer my source of hexo, now you need follow below these steps:</p>
+<ol>
+<li><p>init git and create branch from your blog repository  </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> Hexo </span><br><span class="line">git init</span><br><span class="line">git branch <span class="built_in">source</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>edit .gitignore and add hexo source  </p>
+<figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git  status</span><br><span class="line">git  <span class="keyword">add</span> * <span class="keyword">or</span> git <span class="keyword">add</span> .</span><br><span class="line">git  <span class="keyword">add</span> .gitignore</span><br><span class="line">git  commit -m <span class="string">&quot;add source&quot;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>add themes/minos<br>if you wants to add themes/minos source,it failed, you will see:  </p>
+<figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fatal: Pathspec <span class="string">&apos;xxxx&apos;</span> <span class="keyword">is</span> <span class="keyword">in</span> submodule <span class="string">&apos;themes/minos&apos;</span></span><br></pre></td></tr></table></figure>
+<p>because .git dir exist in themes/minos, you should do this:</p>
+<figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git rm --cached themes<span class="regexp">/minos/</span></span><br><span class="line">git add themes<span class="regexp">/minos/</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>push branch  </p>
+<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git branch -<span class="keyword">a</span></span><br><span class="line">git remote <span class="built_in">add</span> origin http<span class="variable">s:</span>//github.<span class="keyword">com</span>/geoxing/geoxing.github.io.git</span><br><span class="line">git push --<span class="keyword">set</span>-upstream origin <span class="keyword">source</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>first store over</p>
+</li>
+<li><p>update when source changed</p>
+<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git status</span><br><span class="line">git <span class="built_in">add</span>  <span class="keyword">source</span>/_posts/how-<span class="keyword">to</span>-store-hexo-<span class="keyword">source</span>-<span class="built_in">and</span>-theme-<span class="keyword">on</span>-github.md</span><br><span class="line">git push -<span class="keyword">u</span> origin <span class="keyword">source</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>enjoy</p>
+</li>
+</ol>
+
+      
+    </div>
+    
+    
+      <footer class="article-footer">
+        
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Github/">Github</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Tips/">Tips</a></li></ul>
+
+      </footer>
+    
+  </div>
+  
+</article>
+
+
+    
       <article id="post-add-images-using-github-as-imagebed-in-markdown" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
