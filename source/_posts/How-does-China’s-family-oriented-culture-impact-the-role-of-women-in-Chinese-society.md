@@ -4,6 +4,7 @@ categories:
 - Life
 tags:
 - China
+- Quora
 ---
 
 This answer  come from [Paul Denlinger](https://www.quora.com/profile/Paul-Denlinger) ,ref [link](https://www.quora.com/How-does-China%E2%80%99s-family-oriented-culture-impact-the-role-of-women-in-Chinese-society),  
@@ -15,6 +16,10 @@ What the Chinese didn't tell the Europeans and Americans was that the "domestic 
 It was white European and American women who had no power over family finances, or even their own finances!
 When dealing with outside (non-family) members, the women were expected to show proper deference and respect to the men of the household for their opinions, and not steal the limelight, or show them up anyway.
 But these were just social rules. The men knew what was going on.  
+
+
+  <!-- more --> 
+  
 
 女人一直在管理家庭食物方面扮演者重要角色，尤其是在家庭预算和孩子教育方面。  
 你可以从语言中获得一些信息：在古代，男人或丈夫礼貌的称呼妻子是“内人”， 可以被翻译成“家里人或里面的人”，许多欧美人认为这意味着  
